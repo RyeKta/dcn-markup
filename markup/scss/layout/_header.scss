@@ -1,0 +1,92 @@
+#nav{
+	position: relative;
+}
+.navbar-nav{
+	letter-spacing: -4px;
+	li{
+		text-transform: uppercase;
+		margin: 1.3125em 0;
+		letter-spacing: 0;
+		text-align: center;
+		float: none;
+		@include media('>=tablet'){
+			@include display(inline-block, top);
+			text-align: left;
+		}
+		a{
+			@include display(inline-block, top);
+			@include font(0.75em, 1.333, 600);
+			padding: 0.6667em 0;
+			position: relative;
+			margin: 0 2.083em;
+			&:after{
+				background-color: $brand-primary;
+				-webkit-transition: all 0.3s ease;
+				-webkit-transition: all 0.3s ease 0s;
+				transition: all 0.3s ease 0s;
+				position: absolute;
+				content: "";
+				height: 2px;
+				bottom: 0;
+				left: 0;
+				width: 0;
+			}
+			&:hover{
+				&:after{
+					width: 100%;
+				}
+			}
+		}
+	}
+	.active{
+		a{
+			&:after{
+				width: 100%;
+			}
+			&:hover,
+			&:focus{
+				&:after{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+.navbar-brand{
+	margin: 5px 0;
+	width: 40px;
+	@include media('>=tablet'){
+		margin: 13px 15px 12px;                                   
+		width: 50px;
+	}
+}
+.navbar-toggle{
+	margin: 1em 0 0 0;
+	padding: 0;
+	&:hover{
+		opacity: 0.8;
+	}
+	.icon-bar{
+		width: 1.5625em;
+		& + .icon-bar{
+			margin-top: 0.375em;
+		}
+	}
+}
+#main-nav{
+	-webkit-box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(0, 0, 0, 0.1) inset;
+	        box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(0, 0, 0, 0.1) inset;
+	background-color: $white;
+	position: absolute;
+	z-index: 999;
+	width: 100%;
+	margin: 0;
+	top: 100%;
+	left: 0;
+	@include media('>=tablet'){
+		position: static;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
+		width: auto;
+	}
+}

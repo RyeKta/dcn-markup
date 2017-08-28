@@ -1,0 +1,130 @@
+/*** Background color for `<body>`.*/
+/*** Global text color on `<body>`.*/
+/*** Global textual link color.*/
+/*$link-hover-color:      $brand-success;*/
+/*== Typography*/
+/* ==========================================================================
+   http://www.modularscale.com/?16&px&1.25
+   ========================================================================== */
+/*** Unit-less `line-height` for use in components like buttons.*/
+/* 25/16*/
+/*** By default, this inherits from the `<body>`.*/
+/*== Navbar*/
+/* Basics of a navbar*/
+/* Navbar links*/
+/* Navbar toggle*/
+/* line 10, E:/Project Markup/designconepal/markup/scss/base/_helpers.scss */
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/* line 50, E:/Project Markup/designconepal/markup/scss/base/_helpers.scss */
+.ellipsis {
+  white-space: nowrap;
+  /* 1 */
+  text-overflow: ellipsis;
+  /* 2 */
+  overflow: hidden; }
+
+/* line 1, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
+#nav {
+  position: relative; }
+
+/* line 4, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
+.navbar-nav {
+  letter-spacing: -4px; }
+  /* line 6, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
+  .navbar-nav li {
+    text-transform: uppercase;
+    margin: 1.3125em 0;
+    letter-spacing: 0;
+    text-align: center;
+    float: none; }
+    @media (min-width: 768px) {
+      /* line 6, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
+      .navbar-nav li {
+        display: inline-block;
+        vertical-align: top;
+        text-align: left; } }
+    /* line 16, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
+    .navbar-nav li a {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 0.75em;
+      line-height: 1.333;
+      font-weight: 600;
+      padding: 0.6667em 0;
+      position: relative;
+      margin: 0 2.083em; }
+      /* line 22, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
+      .navbar-nav li a:after {
+        background-color: #4b68dd;
+        -webkit-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        position: absolute;
+        content: "";
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        width: 0; }
+      /* line 35, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
+      .navbar-nav li a:hover:after {
+        width: 100%; }
+  /* line 43, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
+  .navbar-nav .active a:after {
+    width: 100%; }
+  /* line 48, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
+  .navbar-nav .active a:hover:after, .navbar-nav .active a:focus:after {
+    width: 100%; }
+
+/* line 55, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
+.navbar-brand {
+  margin: 5px 0;
+  width: 40px; }
+  @media (min-width: 768px) {
+    /* line 55, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
+    .navbar-brand {
+      margin: 13px 15px 12px;
+      width: 50px; } }
+
+/* line 63, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
+.navbar-toggle {
+  margin: 1em 0 0 0;
+  padding: 0; }
+  /* line 66, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
+  .navbar-toggle:hover {
+    opacity: 0.8; }
+  /* line 69, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
+  .navbar-toggle .icon-bar {
+    width: 1.5625em; }
+    /* line 71, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
+    .navbar-toggle .icon-bar + .icon-bar {
+      margin-top: 0.375em; }
+
+/* line 76, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
+#main-nav {
+  -webkit-box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(0, 0, 0, 0.1) inset;
+  background-color: #f7f8fd;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  margin: 0;
+  top: 100%;
+  left: 0; }
+  @media (min-width: 768px) {
+    /* line 76, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
+    #main-nav {
+      position: static;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      width: auto; } }
+
+/* line 10, E:/Project Markup/designconepal/markup/scss/main.scss */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/*# sourceMappingURL=../css/main.map */
