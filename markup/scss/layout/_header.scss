@@ -9,7 +9,7 @@
 		letter-spacing: 0;
 		text-align: center;
 		float: none;
-		@include media('>=tablet'){
+		@include media('>tablet'){
 			@include display(inline-block, top);
 			text-align: left;
 		}
@@ -55,7 +55,7 @@
 .navbar-brand{
 	margin: 5px 0;
 	width: 40px;
-	@include media('>=tablet'){
+	@include media('>tablet'){
 		margin: 13px 15px 12px;                                   
 		width: 50px;
 	}
@@ -83,7 +83,7 @@
 	margin: 0;
 	top: 100%;
 	left: 0;
-	@include media('>=tablet'){
+	@include media('>tablet'){
 		position: static;
 		-webkit-box-shadow: none;
 		        box-shadow: none;
