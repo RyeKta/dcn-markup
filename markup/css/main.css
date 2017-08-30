@@ -14,6 +14,13 @@
 /* Basics of a navbar*/
 /* Navbar links*/
 /* Navbar toggle*/
+/* line 2, E:/Project Markup/designconepal/markup/scss/base/_helpers.scss */
+.data-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 /* line 10, E:/Project Markup/designconepal/markup/scss/base/_helpers.scss */
 .clearfix:after {
   content: '';
@@ -342,16 +349,42 @@ img {
 
 /* line 142, E:/Project Markup/designconepal/markup/scss/main.scss */
 .section-heading h2 {
+  text-transform: uppercase;
   margin: 0 0 1.1818em;
+  letter-spacing: 2px;
 }
 
-/* line 146, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 148, E:/Project Markup/designconepal/markup/scss/main.scss */
 .intro-section {
   padding: 6.25em 0;
 }
 
+/* line 150, E:/Project Markup/designconepal/markup/scss/main.scss */
+.intro-section .more {
+  color: #f38665;
+  margin: 0.8125em 0 2.3125em;
+  text-decoration: underline;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+/* line 158, E:/Project Markup/designconepal/markup/scss/main.scss */
+.intro-section .more:hover {
+  text-decoration: none;
+  color: #e14111;
+}
+
 @media (min-width: 768px) {
-  /* line 149, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 150, E:/Project Markup/designconepal/markup/scss/main.scss */
+  .intro-section .more {
+    margin-left: 6.25em;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 167, E:/Project Markup/designconepal/markup/scss/main.scss */
   .intro-list {
     letter-spacing: -5px;
     margin: 0 -1.5625em;
@@ -359,7 +392,7 @@ img {
 }
 
 @media (min-width: 768px) {
-  /* line 154, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 172, E:/Project Markup/designconepal/markup/scss/main.scss */
   .intro-list .intro {
     display: inline-block;
     vertical-align: top;
@@ -368,60 +401,238 @@ img {
   }
 }
 
-/* line 163, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 181, E:/Project Markup/designconepal/markup/scss/main.scss */
 .intro {
   margin: 0 0 1.5625em;
 }
 
 @media (min-width: 768px) {
-  /* line 163, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 181, E:/Project Markup/designconepal/markup/scss/main.scss */
   .intro {
     padding: 0 1.5625em;
   }
 }
 
-/* line 168, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 186, E:/Project Markup/designconepal/markup/scss/main.scss */
 .intro .intro-icon {
   text-align: center;
 }
 
 @media (min-width: 481px) {
-  /* line 168, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 186, E:/Project Markup/designconepal/markup/scss/main.scss */
   .intro .intro-icon {
+    width: 75px;
     float: left;
   }
 }
 
-/* line 174, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 193, E:/Project Markup/designconepal/markup/scss/main.scss */
 .intro .glyphicon {
-  color: #c4c03e;
+  color: #5970cf;
   line-height: 1.2;
   font-size: 61px;
 }
 
-/* line 179, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 198, E:/Project Markup/designconepal/markup/scss/main.scss */
 .intro .intro-text {
   overflow: hidden;
 }
 
 @media (min-width: 481px) {
-  /* line 179, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 198, E:/Project Markup/designconepal/markup/scss/main.scss */
   .intro .intro-text {
     padding-left: 1.5625em;
   }
 }
 
-/* line 184, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 203, E:/Project Markup/designconepal/markup/scss/main.scss */
 .intro .intro-text h3 {
   text-align: center;
   margin: 0 0 0.88em;
 }
 
 @media (min-width: 481px) {
-  /* line 184, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 203, E:/Project Markup/designconepal/markup/scss/main.scss */
   .intro .intro-text h3 {
     text-align: left;
   }
+}
+
+/* ==========================================================================
+   Services section
+   ========================================================================== */
+/* line 215, E:/Project Markup/designconepal/markup/scss/main.scss */
+.services-section {
+  background-color: #fff;
+  padding: 6.25em 0;
+}
+
+/* line 219, E:/Project Markup/designconepal/markup/scss/main.scss */
+.services-section .section-heading p {
+  font-weight: 300;
+  margin: 0 0 2em;
+}
+
+@media (min-width: 992px) {
+  /* line 219, E:/Project Markup/designconepal/markup/scss/main.scss */
+  .services-section .section-heading p {
+    font-size: 1.25em;
+    line-height: 1.75;
+    font-weight: 300;
+  }
+}
+
+/* line 226, E:/Project Markup/designconepal/markup/scss/main.scss */
+.services-section .section-heading .more {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  /* line 226, E:/Project Markup/designconepal/markup/scss/main.scss */
+  .services-section .section-heading .more {
+    width: auto;
+  }
+}
+
+/* ==========================================================================
+   Data block
+   ========================================================================== */
+/* line 242, E:/Project Markup/designconepal/markup/scss/main.scss */
+.data-block {
+  background-color: #ef5d31;
+  text-align: center;
+  padding: 6.25em 0;
+  color: #f7f8fd;
+}
+
+/* line 248, E:/Project Markup/designconepal/markup/scss/main.scss */
+.data-block .section-heading h2 {
+  color: #f7f8fd;
+}
+
+/* line 253, E:/Project Markup/designconepal/markup/scss/main.scss */
+.data-list {
+  letter-spacing: -5px;
+}
+
+/* line 256, E:/Project Markup/designconepal/markup/scss/main.scss */
+.data-list .data {
+  padding: 1.5625em 1.5625em 0;
+  position: relative;
+  letter-spacing: 0;
+  margin-bottom: 50px;
+}
+
+/* line 261, E:/Project Markup/designconepal/markup/scss/main.scss */
+.data-list .data:first-child {
+  border-left: none;
+}
+
+@media (max-width: 479px) {
+  /* line 265, E:/Project Markup/designconepal/markup/scss/main.scss */
+  .data-list .data:before {
+    background-color: #e14111;
+    margin: 0 0 0 -75px;
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    top: -13px;
+    content: "";
+    left: 50%;
+  }
+  /* line 276, E:/Project Markup/designconepal/markup/scss/main.scss */
+  .data-list .data:first-child:before {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 480px) {
+  /* line 256, E:/Project Markup/designconepal/markup/scss/main.scss */
+  .data-list .data {
+    border-left: 1px solid #e14111;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 991px) {
+  /* line 287, E:/Project Markup/designconepal/markup/scss/main.scss */
+  .data-list .data:last-child {
+    border-left: none;
+  }
+  /* line 289, E:/Project Markup/designconepal/markup/scss/main.scss */
+  .data-list .data:last-child:before {
+    background-color: #e14111;
+    margin: 0 0 0 -75px;
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    content: "";
+    top: -13px;
+    left: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 256, E:/Project Markup/designconepal/markup/scss/main.scss */
+  .data-list .data {
+    width: 33.33%;
+  }
+}
+
+/* line 304, E:/Project Markup/designconepal/markup/scss/main.scss */
+.data-list .data .glyphicon {
+  color: #d83e10;
+  font-size: 4.75em;
+  line-height: 1.25;
+  font-weight: normal;
+}
+
+@media (min-width: 992px) {
+  /* line 304, E:/Project Markup/designconepal/markup/scss/main.scss */
+  .data-list .data .glyphicon {
+    padding-right: 0.3289em;
+    width: 95px;
+    float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 313, E:/Project Markup/designconepal/markup/scss/main.scss */
+  .data-list .data .text-wrap {
+    overflow: hidden;
+    text-align: left;
+  }
+}
+
+/* line 318, E:/Project Markup/designconepal/markup/scss/main.scss */
+.data-list .data .text-wrap h3 {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  line-height: 1;
+  font-weight: 700;
+  margin: 0 0 0.3125em;
+  color: #f7f8fd;
+}
+
+/* line 324, E:/Project Markup/designconepal/markup/scss/main.scss */
+.data-list .data .text-wrap .text {
+  font-size: 0.75em;
+  line-height: 1.333;
+  font-weight: 700;
+  color: #bb360e;
+  text-transform: uppercase;
+}
+
+/* line 331, E:/Project Markup/designconepal/markup/scss/main.scss */
+.data-list .data-holder {
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=../css/main.map */

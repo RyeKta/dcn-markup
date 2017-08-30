@@ -1,12 +1,12 @@
 /* devices viewport width starts at:*/
 $breakpoints: (
-  xs-phone: 320px,
-  phone: 480px,
-  s-phone: 639px,
-  tablet: 767px,
-  desktop: 991px,
-  widescreen: 1300px
-  );
+	xs-phone: 320px,
+	phone: 480px,
+	s-phone: 639px,
+	tablet: 767px,
+	desktop: 991px,
+	widescreen: 1300px
+	);
 @import "bootstrap-custom";
 
 @import 'vendors/include-media';
@@ -23,170 +23,312 @@ img{
 /* ==========================================================================
    Hero Banner
    ========================================================================== */
-.hero-banner{
-	position: relative;
-	overflow: hidden;
-	color: $white;
-	padding: 50px 0;
-	@include media(">tablet"){
-		padding: 100px 0;
-	}
-}
-.bg-stretch{
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: -1;
-	img{
-		max-width: none;
-		height: auto;
-		width: 100%;
-	}
-}
-.top-info{
-	h1{
-		font-family: $font-family-sans-serif;
-		color: $white;
-		font-weight: 800;
-		margin: 0 0 46px;
-	}
-	@include media(">=phone"){
-		width: 450px;
-	}
-	@include media(">s-phone"){
-		width: 600px;
-		h1{
-			font-size: 48px;
-		}
-	}
-	@include media(">tablet"){
-		width: auto;
-		h1{
-			font-size: 61px;
-			margin-bottom: 73px;
-		}
-	}
-	@include media(">desktop"){
-		width: 800px;
-		h1{
-			font-size: 76px;
-		}
-	}
-	p{
-		margin-bottom: 36px;
-		font-size: 25px;
-		@include media(">tablet"){
-			margin-bottom: 61px;
-		}
-	}
-	.btn{
-		text-transform: uppercase;
-		color: $brand-primary;
-		border-radius: 50px;
-		padding: 11px 28px;
-		letter-spacing: 1px;
-		border-width: 2px;
-		font-weight: 600;
-	}
-	.btn-primary{
-		-webkit-transition: all 0.3s ease 0s;
-		transition: all 0.3s ease 0s;
-		background-color: transparent;
-		&:hover{
-			background-color: $brand-primary;
-			border-color: $brand-primary;
-			color: $white;
-		}
-	}
-}
+   .hero-banner{
+   	position: relative;
+   	overflow: hidden;
+   	color: $white;
+   	padding: 50px 0;
+   	@include media(">tablet"){
+   		padding: 100px 0;
+   	}
+   }
+   .bg-stretch{
+   	position: absolute;
+   	top: 0;
+   	left: 0;
+   	right: 0;
+   	bottom: 0;
+   	z-index: -1;
+   	img{
+   		max-width: none;
+   		height: auto;
+   		width: 100%;
+   	}
+   }
+   .top-info{
+   	h1{
+   		font-family: $font-family-sans-serif;
+   		color: $white;
+   		font-weight: 800;
+   		margin: 0 0 46px;
+   	}
+   	@include media(">=phone"){
+   		width: 450px;
+   	}
+   	@include media(">s-phone"){
+   		width: 600px;
+   		h1{
+   			font-size: 48px;
+   		}
+   	}
+   	@include media(">tablet"){
+   		width: auto;
+   		h1{
+   			font-size: 61px;
+   			margin-bottom: 73px;
+   		}
+   	}
+   	@include media(">desktop"){
+   		width: 800px;
+   		h1{
+   			font-size: 76px;
+   		}
+   	}
+   	p{
+   		margin-bottom: 36px;
+   		font-size: 25px;
+   		@include media(">tablet"){
+   			margin-bottom: 61px;
+   		}
+   	}
+   	.btn{
+   		text-transform: uppercase;
+   		color: $brand-primary;
+   		border-radius: 50px;
+   		padding: 11px 28px;
+   		letter-spacing: 1px;
+   		border-width: 2px;
+   		font-weight: 600;
+   	}
+   	.btn-primary{
+   		-webkit-transition: all 0.3s ease 0s;
+   		transition: all 0.3s ease 0s;
+   		background-color: transparent;
+   		&:hover{
+   			background-color: $brand-primary;
+   			border-color: $brand-primary;
+   			color: $white;
+   		}
+   	}
+   }
 /* ==========================================================================
    Clients logo list
    ========================================================================== */
-.logo-panel{
-	background-color: #fff; 
-	padding: 0.8125em 0;
-	.title{
-		@include font(0.875em, 1.4285);
-		display: inline-block;
-		vertical-align: top;
-		margin-bottom: 5px;
-		color: #949494;
-	}
-}
-.logo-wrap{
-	letter-spacing: -5px;
-	margin: 0;
-	li{
-		vertical-align: middle;
-		display: inline-block;
-		margin: 0 0 0.8125em;
-		padding: 0 0.8125em;
-		letter-spacing: 0;
-		a{
-			-webkit-transition: all 0.3s ease 0s;
-			transition: all 0.3s ease 0s;
-			display: block;
-			&:hover{
-				opacity: 0.8;
-			}
-		}
-	}
-}
+   .logo-panel{
+   	background-color: #fff; 
+   	padding: 0.8125em 0;
+   	.title{
+   		@include font(0.875em, 1.4285);
+   		display: inline-block;
+   		vertical-align: top;
+   		margin-bottom: 5px;
+   		color: #949494;
+   	}
+   }
+   .logo-wrap{
+   	letter-spacing: -5px;
+   	margin: 0;
+   	li{
+   		vertical-align: middle;
+   		display: inline-block;
+   		margin: 0 0 0.8125em;
+   		padding: 0 0.8125em;
+   		letter-spacing: 0;
+   		a{
+   			-webkit-transition: all 0.3s ease 0s;
+   			transition: all 0.3s ease 0s;
+   			display: block;
+   			&:hover{
+   				opacity: 0.8;
+   			}
+   		}
+   	}
+   }
 /* ==========================================================================
    Intro Section
    ========================================================================== */
-.section-heading{
-	margin: 0 0 3.125em;
-	h2{
-		margin: 0 0 1.1818em;
-	}
-}
-.intro-section{
-	padding: 6.25em 0;
-}
-.intro-list{
-	@include media(">tablet"){
-		letter-spacing: -5px;
-		margin: 0 -1.5625em;
-	}
-	.intro{
-		@include media(">tablet"){
-			display: inline-block;
-			vertical-align: top;
-			letter-spacing: 0;
-			width: 50%;
-		}
-	}
-}
-.intro{
-	margin: 0 0 1.5625em;
-	@include media(">tablet"){
-		padding: 0 1.5625em;
-	}
-	.intro-icon{
-		text-align: center;
-		@include media(">phone"){
-			float: left;
-		}
-	}
-	.glyphicon{
-		color: desaturate(#f0ea12, 35%);
-		line-height: 1.2;
-		font-size: 61px;
-	}
-	.intro-text{
-		overflow: hidden;
-		@include media(">phone"){
-			padding-left: 1.5625em;
-		}
-		h3{
-			text-align: center;
-			margin: 0 0 0.88em;
-			@include media(">phone"){
-				text-align: left;
-			}
-		}
-	}
-}
+   .section-heading{
+   	margin: 0 0 3.125em;
+   	h2{
+   		text-transform: uppercase;
+   		margin: 0 0 1.1818em;
+   		letter-spacing: 2px;
+   	}
+   }
+   .intro-section{
+   	padding: 6.25em 0;
+   	.more{
+   		color: lighten($brand-danger, 20%);
+   		margin: 0.8125em 0 2.3125em;
+   		text-decoration: underline;
+   		display: inline-block;
+   		vertical-align: top;
+   		-webkit-transition: all 0.3s ease 0s;
+   		transition: all 0.3s ease 0s;
+   		&:hover{
+   			text-decoration: none;
+   			color: $brand-danger;
+   		}
+   		@include media('>tablet'){
+   			margin-left: 6.25em;
+   		}
+   	}
+   }
+   .intro-list{
+   	@include media(">tablet"){
+   		letter-spacing: -5px;
+   		margin: 0 -1.5625em;
+   	}
+   	.intro{
+   		@include media(">tablet"){
+   			display: inline-block;
+   			vertical-align: top;
+   			letter-spacing: 0;
+   			width: 50%;
+   		}
+   	}
+   }
+   .intro{
+   	margin: 0 0 1.5625em;
+   	@include media(">tablet"){
+   		padding: 0 1.5625em;
+   	}
+   	.intro-icon{
+   		text-align: center;
+   		@include media(">phone"){
+   			width: 75px;
+   			float: left;
+   		}
+   	}
+   	.glyphicon{
+   		color: desaturate($brand-primary, 13%);
+   		line-height: 1.2;
+   		font-size: 61px;
+   	}
+   	.intro-text{
+   		overflow: hidden;
+   		@include media(">phone"){
+   			padding-left: 1.5625em;
+   		}
+   		h3{
+   			text-align: center;
+   			margin: 0 0 0.88em;
+   			@include media(">phone"){
+   				text-align: left;
+   			}
+   		}
+   	}
+   }
+/* ==========================================================================
+   Services section
+   ========================================================================== */
+   .services-section{
+   	background-color: #fff;
+   	padding: 6.25em 0;
+   	.section-heading{
+   		p{
+   			font-weight: 300;
+   			margin: 0 0 2em;
+   			@include media('>desktop'){
+   				@include font(1.25em,1.75, 300);
+   			}
+   		}
+   		.more{
+   			-webkit-transition: all 0.3s ease 0s;
+   			transition: all 0.3s ease 0s;
+   			text-transform: uppercase;
+   			letter-spacing: 1px;
+   			font-weight: 600;
+   			width: 100%;
+   			@include media('>=phone'){
+   				width: auto;
+   			}
+   		}
+   	}
+   }
+/* ==========================================================================
+   Data block
+   ========================================================================== */
+   .data-block{
+   	background-color: lighten($brand-danger, 9%);
+   	text-align: center;
+   	padding: 6.25em 0;
+   	color: $white;
+   	.section-heading{
+   		h2{
+   			color: $white;
+   		}
+   	}
+   }
+   .data-list{
+   	letter-spacing: -5px;
+   	@extend %listreset;
+   	.data{
+   		padding: 1.5625em 1.5625em 0;
+   		position: relative;
+   		letter-spacing: 0;
+   		margin-bottom: 50px;
+   		&:first-child{
+   			border-left: none;
+   		}
+   		@include media("<phone"){
+   			&:before{
+   				background-color: $brand-danger;
+   				margin: 0 0 0 -75px;
+   				position: absolute;
+   				width: 150px;
+   				height: 1px;
+   				top: -13px;
+   				content: "";
+   				left: 50%;
+   			}
+   			&:first-child{
+   				&:before{
+   					background-color: transparent;
+   				}
+   			}
+   		}
+   		@include media(">=phone"){
+   			border-left: 1px solid $brand-danger;
+   			@include display(inline-block, top);
+   			width: 50%;
+   		}
+   		@include media(">=phone","<=desktop"){
+   			&:last-child{
+   				border-left: none;
+   				&:before{
+   					background-color: $brand-danger;
+   					margin: 0 0 0 -75px;
+   					position: absolute;
+   					width: 150px;
+   					height: 1px;
+   					content: "";
+   					top: -13px;
+   					left: 50%;
+   				}
+   			}
+   		}
+   		@include media(">desktop"){
+   			width: 33.33%;
+   		}
+   		.glyphicon{
+   			color: darken($brand-danger, 2%);
+   			@include font(4.75em, 1.25);
+   			@include media(">desktop"){
+   				padding-right: 0.3289em;
+   				width: 95px;
+   				float: left;
+   			}
+   		}
+   		.text-wrap{
+   			@include media(">desktop"){
+   				overflow: hidden;
+   				text-align: left;
+   			}
+   			h3{
+   				font-family: $font-family-sans-serif;
+   				@include font(3em, 1, 700);
+   				margin: 0 0 0.3125em;
+   				color: $white;
+   			}
+   			.text{
+   				@include font(0.75em,1.333,700);
+   				color: darken($brand-danger, 8%);
+   				text-transform: uppercase;
+   			}
+   		}
+   	}
+   	.data-holder{
+   		overflow: hidden;
+   	}
+   }
