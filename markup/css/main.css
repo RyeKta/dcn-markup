@@ -14,6 +14,64 @@
 /* Basics of a navbar*/
 /* Navbar links*/
 /* Navbar toggle*/
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?e4w2vw");
+  src: url("../fonts/icomoon/icomoon.eot?e4w2vw#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?e4w2vw") format("truetype"), url("../fonts/icomoon/icomoon.woff?e4w2vw") format("woff"), url("../fonts/icomoon/icomoon.svg?e4w2vw#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 12, E:/Project Markup/designconepal/markup/scss/vendors/icomoon/_icomoon.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 27, E:/Project Markup/designconepal/markup/scss/vendors/icomoon/_icomoon.scss */
+.icon-twitter-square:before {
+  content: "\f081";
+}
+
+/* line 30, E:/Project Markup/designconepal/markup/scss/vendors/icomoon/_icomoon.scss */
+.icon-facebook-square:before {
+  content: "\f082";
+}
+
+/* line 33, E:/Project Markup/designconepal/markup/scss/vendors/icomoon/_icomoon.scss */
+.icon-linkedin-square:before {
+  content: "\f08c";
+}
+
+/* line 36, E:/Project Markup/designconepal/markup/scss/vendors/icomoon/_icomoon.scss */
+.icon-angle-left:before {
+  content: "\f104";
+}
+
+/* line 39, E:/Project Markup/designconepal/markup/scss/vendors/icomoon/_icomoon.scss */
+.icon-angle-right:before {
+  content: "\f105";
+}
+
+/* line 42, E:/Project Markup/designconepal/markup/scss/vendors/icomoon/_icomoon.scss */
+.icon-quote-left:before {
+  content: "\f10d";
+}
+
+/* line 45, E:/Project Markup/designconepal/markup/scss/vendors/icomoon/_icomoon.scss */
+.icon-quote-right:before {
+  content: "\f10e";
+}
+
 /* line 2, E:/Project Markup/designconepal/markup/scss/base/_helpers.scss */
 .data-list {
   margin: 0;
@@ -164,7 +222,7 @@
   }
 }
 
-/* line 19, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 20, E:/Project Markup/designconepal/markup/scss/main.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -173,7 +231,7 @@ img {
 /* ==========================================================================
    Hero Banner
    ========================================================================== */
-/* line 26, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 27, E:/Project Markup/designconepal/markup/scss/main.scss */
 .hero-banner {
   position: relative;
   overflow: hidden;
@@ -182,13 +240,13 @@ img {
 }
 
 @media (min-width: 768px) {
-  /* line 26, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 27, E:/Project Markup/designconepal/markup/scss/main.scss */
   .hero-banner {
     padding: 100px 0;
   }
 }
 
-/* line 35, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 36, E:/Project Markup/designconepal/markup/scss/main.scss */
 .bg-stretch {
   position: absolute;
   top: 0;
@@ -198,14 +256,14 @@ img {
   z-index: -1;
 }
 
-/* line 42, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 43, E:/Project Markup/designconepal/markup/scss/main.scss */
 .bg-stretch img {
   max-width: none;
   height: auto;
   width: 100%;
 }
 
-/* line 49, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 50, E:/Project Markup/designconepal/markup/scss/main.scss */
 .top-info h1 {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #f7f8fd;
@@ -214,29 +272,29 @@ img {
 }
 
 @media (min-width: 480px) {
-  /* line 48, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 49, E:/Project Markup/designconepal/markup/scss/main.scss */
   .top-info {
     width: 450px;
   }
 }
 
 @media (min-width: 640px) {
-  /* line 48, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 49, E:/Project Markup/designconepal/markup/scss/main.scss */
   .top-info {
     width: 600px;
   }
-  /* line 60, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 61, E:/Project Markup/designconepal/markup/scss/main.scss */
   .top-info h1 {
     font-size: 48px;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 48, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 49, E:/Project Markup/designconepal/markup/scss/main.scss */
   .top-info {
     width: auto;
   }
-  /* line 66, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 67, E:/Project Markup/designconepal/markup/scss/main.scss */
   .top-info h1 {
     font-size: 61px;
     margin-bottom: 73px;
@@ -244,30 +302,30 @@ img {
 }
 
 @media (min-width: 992px) {
-  /* line 48, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 49, E:/Project Markup/designconepal/markup/scss/main.scss */
   .top-info {
     width: 800px;
   }
-  /* line 73, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 74, E:/Project Markup/designconepal/markup/scss/main.scss */
   .top-info h1 {
     font-size: 76px;
   }
 }
 
-/* line 77, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 78, E:/Project Markup/designconepal/markup/scss/main.scss */
 .top-info p {
   margin-bottom: 36px;
   font-size: 25px;
 }
 
 @media (min-width: 768px) {
-  /* line 77, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 78, E:/Project Markup/designconepal/markup/scss/main.scss */
   .top-info p {
     margin-bottom: 61px;
   }
 }
 
-/* line 84, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 85, E:/Project Markup/designconepal/markup/scss/main.scss */
 .top-info .btn {
   text-transform: uppercase;
   color: #4b68dd;
@@ -278,14 +336,14 @@ img {
   font-weight: 600;
 }
 
-/* line 93, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 94, E:/Project Markup/designconepal/markup/scss/main.scss */
 .top-info .btn-primary {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   background-color: transparent;
 }
 
-/* line 97, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 98, E:/Project Markup/designconepal/markup/scss/main.scss */
 .top-info .btn-primary:hover {
   background-color: #4b68dd;
   border-color: #4b68dd;
@@ -295,13 +353,13 @@ img {
 /* ==========================================================================
    Clients logo list
    ========================================================================== */
-/* line 107, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 108, E:/Project Markup/designconepal/markup/scss/main.scss */
 .logo-panel {
   background-color: #fff;
   padding: 0.8125em 0;
 }
 
-/* line 110, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 111, E:/Project Markup/designconepal/markup/scss/main.scss */
 .logo-panel .title {
   font-size: 0.875em;
   line-height: 1.4285;
@@ -312,13 +370,13 @@ img {
   color: #949494;
 }
 
-/* line 118, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 119, E:/Project Markup/designconepal/markup/scss/main.scss */
 .logo-wrap {
   letter-spacing: -5px;
   margin: 0;
 }
 
-/* line 121, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 122, E:/Project Markup/designconepal/markup/scss/main.scss */
 .logo-wrap li {
   vertical-align: middle;
   display: inline-block;
@@ -327,14 +385,14 @@ img {
   letter-spacing: 0;
 }
 
-/* line 127, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 128, E:/Project Markup/designconepal/markup/scss/main.scss */
 .logo-wrap li a {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   display: block;
 }
 
-/* line 131, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 132, E:/Project Markup/designconepal/markup/scss/main.scss */
 .logo-wrap li a:hover {
   opacity: 0.8;
 }
@@ -342,24 +400,24 @@ img {
 /* ==========================================================================
    Intro Section
    ========================================================================== */
-/* line 140, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 141, E:/Project Markup/designconepal/markup/scss/main.scss */
 .section-heading {
   margin: 0 0 3.125em;
 }
 
-/* line 142, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 143, E:/Project Markup/designconepal/markup/scss/main.scss */
 .section-heading h2 {
   text-transform: uppercase;
   margin: 0 0 1.1818em;
   letter-spacing: 2px;
 }
 
-/* line 148, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 149, E:/Project Markup/designconepal/markup/scss/main.scss */
 .intro-section {
   padding: 6.25em 0;
 }
 
-/* line 150, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 151, E:/Project Markup/designconepal/markup/scss/main.scss */
 .intro-section .more {
   color: #f38665;
   margin: 0.8125em 0 2.3125em;
@@ -370,21 +428,21 @@ img {
   transition: all 0.3s ease 0s;
 }
 
-/* line 158, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 159, E:/Project Markup/designconepal/markup/scss/main.scss */
 .intro-section .more:hover {
   text-decoration: none;
   color: #e14111;
 }
 
 @media (min-width: 768px) {
-  /* line 150, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 151, E:/Project Markup/designconepal/markup/scss/main.scss */
   .intro-section .more {
     margin-left: 6.25em;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 167, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 168, E:/Project Markup/designconepal/markup/scss/main.scss */
   .intro-list {
     letter-spacing: -5px;
     margin: 0 -1.5625em;
@@ -392,7 +450,7 @@ img {
 }
 
 @media (min-width: 768px) {
-  /* line 172, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 173, E:/Project Markup/designconepal/markup/scss/main.scss */
   .intro-list .intro {
     display: inline-block;
     vertical-align: top;
@@ -401,58 +459,58 @@ img {
   }
 }
 
-/* line 181, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 182, E:/Project Markup/designconepal/markup/scss/main.scss */
 .intro {
   margin: 0 0 1.5625em;
 }
 
 @media (min-width: 768px) {
-  /* line 181, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 182, E:/Project Markup/designconepal/markup/scss/main.scss */
   .intro {
     padding: 0 1.5625em;
   }
 }
 
-/* line 186, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 187, E:/Project Markup/designconepal/markup/scss/main.scss */
 .intro .intro-icon {
   text-align: center;
 }
 
 @media (min-width: 481px) {
-  /* line 186, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 187, E:/Project Markup/designconepal/markup/scss/main.scss */
   .intro .intro-icon {
     width: 75px;
     float: left;
   }
 }
 
-/* line 193, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 194, E:/Project Markup/designconepal/markup/scss/main.scss */
 .intro .glyphicon {
   color: #5970cf;
   line-height: 1.2;
   font-size: 61px;
 }
 
-/* line 198, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 199, E:/Project Markup/designconepal/markup/scss/main.scss */
 .intro .intro-text {
   overflow: hidden;
 }
 
 @media (min-width: 481px) {
-  /* line 198, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 199, E:/Project Markup/designconepal/markup/scss/main.scss */
   .intro .intro-text {
     padding-left: 1.5625em;
   }
 }
 
-/* line 203, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 204, E:/Project Markup/designconepal/markup/scss/main.scss */
 .intro .intro-text h3 {
   text-align: center;
   margin: 0 0 0.88em;
 }
 
 @media (min-width: 481px) {
-  /* line 203, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 204, E:/Project Markup/designconepal/markup/scss/main.scss */
   .intro .intro-text h3 {
     text-align: left;
   }
@@ -461,20 +519,20 @@ img {
 /* ==========================================================================
    Services section
    ========================================================================== */
-/* line 215, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 216, E:/Project Markup/designconepal/markup/scss/main.scss */
 .services-section {
   background-color: #fff;
   padding: 6.25em 0;
 }
 
-/* line 219, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 220, E:/Project Markup/designconepal/markup/scss/main.scss */
 .services-section .section-heading p {
   font-weight: 300;
   margin: 0 0 2em;
 }
 
 @media (min-width: 992px) {
-  /* line 219, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 220, E:/Project Markup/designconepal/markup/scss/main.scss */
   .services-section .section-heading p {
     font-size: 1.25em;
     line-height: 1.75;
@@ -482,7 +540,7 @@ img {
   }
 }
 
-/* line 226, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 227, E:/Project Markup/designconepal/markup/scss/main.scss */
 .services-section .section-heading .more {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -493,7 +551,7 @@ img {
 }
 
 @media (min-width: 480px) {
-  /* line 226, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 227, E:/Project Markup/designconepal/markup/scss/main.scss */
   .services-section .section-heading .more {
     width: auto;
   }
@@ -502,7 +560,7 @@ img {
 /* ==========================================================================
    Data block
    ========================================================================== */
-/* line 242, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 243, E:/Project Markup/designconepal/markup/scss/main.scss */
 .data-block {
   background-color: #ef5d31;
   text-align: center;
@@ -510,17 +568,17 @@ img {
   color: #f7f8fd;
 }
 
-/* line 248, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 249, E:/Project Markup/designconepal/markup/scss/main.scss */
 .data-block .section-heading h2 {
   color: #f7f8fd;
 }
 
-/* line 253, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 254, E:/Project Markup/designconepal/markup/scss/main.scss */
 .data-list {
   letter-spacing: -5px;
 }
 
-/* line 256, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 257, E:/Project Markup/designconepal/markup/scss/main.scss */
 .data-list .data {
   padding: 1.5625em 1.5625em 0;
   position: relative;
@@ -528,13 +586,13 @@ img {
   margin-bottom: 50px;
 }
 
-/* line 261, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 262, E:/Project Markup/designconepal/markup/scss/main.scss */
 .data-list .data:first-child {
   border-left: none;
 }
 
 @media (max-width: 479px) {
-  /* line 265, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 266, E:/Project Markup/designconepal/markup/scss/main.scss */
   .data-list .data:before {
     background-color: #e14111;
     margin: 0 0 0 -75px;
@@ -545,14 +603,14 @@ img {
     content: "";
     left: 50%;
   }
-  /* line 276, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 277, E:/Project Markup/designconepal/markup/scss/main.scss */
   .data-list .data:first-child:before {
     background-color: transparent;
   }
 }
 
 @media (min-width: 480px) {
-  /* line 256, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 257, E:/Project Markup/designconepal/markup/scss/main.scss */
   .data-list .data {
     border-left: 1px solid #e14111;
     display: inline-block;
@@ -562,11 +620,11 @@ img {
 }
 
 @media (min-width: 480px) and (max-width: 991px) {
-  /* line 287, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 288, E:/Project Markup/designconepal/markup/scss/main.scss */
   .data-list .data:last-child {
     border-left: none;
   }
-  /* line 289, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 290, E:/Project Markup/designconepal/markup/scss/main.scss */
   .data-list .data:last-child:before {
     background-color: #e14111;
     margin: 0 0 0 -75px;
@@ -580,13 +638,13 @@ img {
 }
 
 @media (min-width: 992px) {
-  /* line 256, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 257, E:/Project Markup/designconepal/markup/scss/main.scss */
   .data-list .data {
     width: 33.33%;
   }
 }
 
-/* line 304, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 305, E:/Project Markup/designconepal/markup/scss/main.scss */
 .data-list .data .glyphicon {
   color: #d83e10;
   font-size: 4.75em;
@@ -595,7 +653,7 @@ img {
 }
 
 @media (min-width: 992px) {
-  /* line 304, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 305, E:/Project Markup/designconepal/markup/scss/main.scss */
   .data-list .data .glyphicon {
     padding-right: 0.3289em;
     width: 95px;
@@ -604,14 +662,14 @@ img {
 }
 
 @media (min-width: 992px) {
-  /* line 313, E:/Project Markup/designconepal/markup/scss/main.scss */
+  /* line 314, E:/Project Markup/designconepal/markup/scss/main.scss */
   .data-list .data .text-wrap {
     overflow: hidden;
     text-align: left;
   }
 }
 
-/* line 318, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 319, E:/Project Markup/designconepal/markup/scss/main.scss */
 .data-list .data .text-wrap h3 {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 3em;
@@ -621,7 +679,7 @@ img {
   color: #f7f8fd;
 }
 
-/* line 324, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 325, E:/Project Markup/designconepal/markup/scss/main.scss */
 .data-list .data .text-wrap .text {
   font-size: 0.75em;
   line-height: 1.333;
@@ -630,9 +688,208 @@ img {
   text-transform: uppercase;
 }
 
-/* line 331, E:/Project Markup/designconepal/markup/scss/main.scss */
+/* line 332, E:/Project Markup/designconepal/markup/scss/main.scss */
 .data-list .data-holder {
   overflow: hidden;
+}
+
+/* ==========================================================================
+   Testimonial block
+   ========================================================================== */
+/* line 339, E:/Project Markup/designconepal/markup/scss/main.scss */
+.testimonial-block {
+  padding: 6.25em 0 3.125em;
+}
+
+/* line 341, E:/Project Markup/designconepal/markup/scss/main.scss */
+.testimonial-block .testimonial-holder {
+  -webkit-box-shadow: 0 2px 25px 0 rgba(3, 6, 17, 0.1);
+  box-shadow: 0 2px 25px 0 rgba(3, 6, 17, 0.1);
+  padding: 1.5625em 1.5625em 0;
+  background-color: #fff;
+  margin: auto;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  /* line 341, E:/Project Markup/designconepal/markup/scss/main.scss */
+  .testimonial-block .testimonial-holder {
+    padding: 6.25em 6.25em 0;
+    width: 568px;
+  }
+}
+
+/* line 352, E:/Project Markup/designconepal/markup/scss/main.scss */
+.testimonial-block .testimonial-holder .img-holder {
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 4.6875em;
+  width: 4.6875em;
+  top: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  /* line 352, E:/Project Markup/designconepal/markup/scss/main.scss */
+  .testimonial-block .testimonial-holder .img-holder {
+    width: 6.25em;
+    height: 6.25em;
+  }
+}
+
+/* line 365, E:/Project Markup/designconepal/markup/scss/main.scss */
+.testimonial-block .testimonial-holder .img-holder img {
+  min-width: 100%;
+}
+
+/* line 370, E:/Project Markup/designconepal/markup/scss/main.scss */
+.testimonial-block blockquote {
+  padding: 1.5625em 0 1.5625em 4.6875em;
+  position: relative;
+  font-size: 16px;
+  border-left: 0;
+}
+
+@media (min-width: 768px) {
+  /* line 370, E:/Project Markup/designconepal/markup/scss/main.scss */
+  .testimonial-block blockquote {
+    padding-left: 7.8125em;
+  }
+}
+
+/* line 378, E:/Project Markup/designconepal/markup/scss/main.scss */
+.testimonial-block blockquote:before {
+  color: #f6f372;
+  font-size: 3em;
+  line-height: 1;
+  font-weight: normal;
+  font-family: "icomoon";
+  font-weight: normal;
+  position: absolute;
+  font-style: normal;
+  text-align: center;
+  content: "\f10d";
+  width: 1.5625em;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  /* line 378, E:/Project Markup/designconepal/markup/scss/main.scss */
+  .testimonial-block blockquote:before {
+    font-size: 3.8125em;
+    width: 1.639em;
+  }
+}
+
+/* line 394, E:/Project Markup/designconepal/markup/scss/main.scss */
+.testimonial-block blockquote q {
+  color: #1b328e;
+  font-size: 1.5625em;
+  line-height: 1.4;
+  font-weight: 700;
+  display: block;
+  display: block;
+}
+
+/* line 399, E:/Project Markup/designconepal/markup/scss/main.scss */
+.testimonial-block blockquote q:before, .testimonial-block blockquote q:after {
+  content: "";
+}
+
+@media (min-width: 768px) {
+  /* line 394, E:/Project Markup/designconepal/markup/scss/main.scss */
+  .testimonial-block blockquote q {
+    font-size: 1.9375em;
+    line-height: 1.3548;
+  }
+}
+
+/* line 409, E:/Project Markup/designconepal/markup/scss/main.scss */
+.testimonial-block .footline {
+  background-color: #f6f372;
+  margin: 0 -6.25em;
+}
+
+/* line 412, E:/Project Markup/designconepal/markup/scss/main.scss */
+.testimonial-block .footline .footline-holder {
+  padding: 1.5625em 6.25em 3.125em;
+}
+
+/* line 415, E:/Project Markup/designconepal/markup/scss/main.scss */
+.testimonial-block .footline p {
+  text-align: center;
+}
+
+/* line 418, E:/Project Markup/designconepal/markup/scss/main.scss */
+.testimonial-block .footline cite {
+  font-style: normal;
+  display: block;
+  color: #030611;
+}
+
+/* line 425, E:/Project Markup/designconepal/markup/scss/main.scss */
+.testimonial-block .carousel-inner > .item {
+  padding: 50px 0;
+}
+
+/* line 429, E:/Project Markup/designconepal/markup/scss/main.scss */
+.testimonial-block .carousel-control {
+  width: auto;
+}
+
+/* line 431, E:/Project Markup/designconepal/markup/scss/main.scss */
+.testimonial-block .carousel-control.left, .testimonial-block .carousel-control.right {
+  background-image: none;
+}
+
+/* line 435, E:/Project Markup/designconepal/markup/scss/main.scss */
+.testimonial-block .carousel-control.right {
+  left: auto;
+}
+
+@media (min-width: 992px) {
+  /* line 429, E:/Project Markup/designconepal/markup/scss/main.scss */
+  .testimonial-block .carousel-control {
+    left: -5em;
+  }
+  /* line 440, E:/Project Markup/designconepal/markup/scss/main.scss */
+  .testimonial-block .carousel-control.right {
+    right: -5em;
+  }
+}
+
+/* line 444, E:/Project Markup/designconepal/markup/scss/main.scss */
+.testimonial-block .carousel-control .icon {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  font-size: 2.4em;
+  color: #030611;
+  z-index: 5;
+  top: 50%;
+}
+
+/* line 452, E:/Project Markup/designconepal/markup/scss/main.scss */
+.testimonial-block .carousel-control .icon.icon-angle-right {
+  margin-left: -33px;
+}
+
+@media (min-width: 768px) {
+  /* line 444, E:/Project Markup/designconepal/markup/scss/main.scss */
+  .testimonial-block .carousel-control .icon {
+    font-size: 4.75em;
+  }
+}
+
+/* ==========================================================================
+   Help section
+   ========================================================================== */
+/* line 465, E:/Project Markup/designconepal/markup/scss/main.scss */
+.help-section {
+  background-color: #fff;
+  padding: 6.25em 0;
 }
 
 /*# sourceMappingURL=../css/main.map */

@@ -4941,30 +4941,30 @@ fieldset[disabled] .btn-success.focus {
 /* line 79, E:/Project Markup/designconepal/markup/scss/vendors/bootstrap/_buttons.scss */
 .btn-info {
   color: #fff;
-  background-color: #f4ef4c;
-  border-color: #f4ef4c;
+  background-color: #f0ea12;
+  border-color: #f0ea12;
 }
 
 /* line 11, E:/Project Markup/designconepal/markup/scss/vendors/bootstrap/mixins/_buttons.scss */
 .btn-info:focus, .btn-info.focus {
   color: #fff;
-  background-color: #f1eb1c;
-  border-color: #b5b00b;
+  background-color: #c3be0c;
+  border-color: #7b7808;
 }
 
 /* line 17, E:/Project Markup/designconepal/markup/scss/vendors/bootstrap/mixins/_buttons.scss */
 .btn-info:hover {
   color: #fff;
-  background-color: #f1eb1c;
-  border-color: #f0ea12;
+  background-color: #c3be0c;
+  border-color: #b9b40c;
 }
 
 /* line 22, E:/Project Markup/designconepal/markup/scss/vendors/bootstrap/mixins/_buttons.scss */
 .btn-info:active, .btn-info.active,
 .open > .btn-info.dropdown-toggle {
   color: #fff;
-  background-color: #f1eb1c;
-  border-color: #f0ea12;
+  background-color: #c3be0c;
+  border-color: #b9b40c;
 }
 
 /* line 29, E:/Project Markup/designconepal/markup/scss/vendors/bootstrap/mixins/_buttons.scss */
@@ -4973,8 +4973,8 @@ fieldset[disabled] .btn-success.focus {
 .open > .btn-info.dropdown-toggle:focus,
 .open > .btn-info.dropdown-toggle.focus {
   color: #fff;
-  background-color: #dcd60e;
-  border-color: #b5b00b;
+  background-color: #a19d0a;
+  border-color: #7b7808;
 }
 
 /* line 37, E:/Project Markup/designconepal/markup/scss/vendors/bootstrap/mixins/_buttons.scss */
@@ -4988,13 +4988,13 @@ fieldset[disabled] .btn-success.focus {
 fieldset[disabled] .btn-info:hover,
 fieldset[disabled] .btn-info:focus,
 fieldset[disabled] .btn-info.focus {
-  background-color: #f4ef4c;
-  border-color: #f4ef4c;
+  background-color: #f0ea12;
+  border-color: #f0ea12;
 }
 
 /* line 53, E:/Project Markup/designconepal/markup/scss/vendors/bootstrap/mixins/_buttons.scss */
 .btn-info .badge {
-  color: #f4ef4c;
+  color: #f0ea12;
   background-color: #fff;
 }
 
@@ -7042,12 +7042,12 @@ a.label:hover, a.label:focus {
 
 /* line 56, E:/Project Markup/designconepal/markup/scss/vendors/bootstrap/_labels.scss */
 .label-info {
-  background-color: #f4ef4c;
+  background-color: #f0ea12;
 }
 
 /* line 7, E:/Project Markup/designconepal/markup/scss/vendors/bootstrap/mixins/_labels.scss */
 .label-info[href]:hover, .label-info[href]:focus {
-  background-color: #f1eb1c;
+  background-color: #c3be0c;
 }
 
 /* line 60, E:/Project Markup/designconepal/markup/scss/vendors/bootstrap/_labels.scss */
@@ -7419,7 +7419,7 @@ a.thumbnail.active {
 
 /* line 77, E:/Project Markup/designconepal/markup/scss/vendors/bootstrap/_progress-bars.scss */
 .progress-bar-info {
-  background-color: #f4ef4c;
+  background-color: #f0ea12;
 }
 
 /* line 7, E:/Project Markup/designconepal/markup/scss/vendors/bootstrap/mixins/_progress-bar.scss */

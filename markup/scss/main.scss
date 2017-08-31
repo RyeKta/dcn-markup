@@ -10,6 +10,7 @@ $breakpoints: (
 @import "bootstrap-custom";
 
 @import 'vendors/include-media';
+@import 'vendors/icomoon/icomoon';
 
 @import 'base/mixins';
 @import 'base/helpers';
@@ -332,3 +333,136 @@ img{
    		overflow: hidden;
    	}
    }
+/* ==========================================================================
+   Testimonial block
+   ========================================================================== */
+.testimonial-block{
+	padding: 6.25em 0 3.125em;
+	.testimonial-holder{
+		-webkit-box-shadow: 0 2px 25px 0 transparentize($black, 0.9);
+		        box-shadow: 0 2px 25px 0 transparentize($black, 0.9);
+		padding: 1.5625em 1.5625em 0;
+		background-color: #fff;
+		margin: auto;
+		position: relative;
+		@include media('>tablet'){
+			padding: 6.25em 6.25em 0;
+			width: 568px;
+		}
+		.img-holder{
+			position: absolute;
+			border-radius: 50%;
+			overflow: hidden;
+			height: 4.6875em;
+			width: 4.6875em;
+			top: 0;
+			-webkit-transform: translateY(-50%);
+			        transform: translateY(-50%);
+			@include media('>tablet'){
+				width: 6.25em;
+				height: 6.25em;
+			}
+			img{
+			        min-width: 100%;
+			    }
+		}
+	}
+	blockquote{
+		padding: 1.5625em 0 1.5625em 4.6875em;
+		position: relative;
+		font-size: 16px;
+		border-left: 0;
+		@include media('>tablet'){
+			padding-left: 7.8125em;
+		}
+		&:before{
+			color: lighten($brand-info, 20%);
+			@include font(3em, 1);
+			font-family: "icomoon";
+			font-weight: normal;
+			position: absolute;
+			font-style: normal;
+			text-align: center;
+			content:"\f10d";
+			width: 1.5625em;
+			left: 0;
+			@include media('>tablet'){
+				font-size: 3.8125em;
+				width: 1.639em;
+			}
+		}
+		q{
+			color: darken($brand-primary, 25%);
+			@include font(1.5625em, 1.4, 700);
+			display: block;
+			display: block;
+			&:before,
+			&:after{
+				content: "";
+			}
+			@include media('>tablet'){
+				font-size: 1.9375em;
+				line-height: 1.3548;
+			}
+		}
+	}
+	.footline{
+		background-color: lighten($brand-info, 20%);
+		margin: 0 -6.25em;
+		.footline-holder{
+			padding: 1.5625em 6.25em 3.125em;
+		}
+		p{
+			text-align: center;
+		}
+		cite{
+			font-style: normal;
+			display: block;
+			color: $black;
+		}
+	}
+	.carousel-inner{
+		> .item{
+			padding: 50px 0;
+		}
+	}
+	.carousel-control{
+		width: auto;
+		&.left,
+		&.right{
+			background-image: none;
+		}
+		&.right{
+			left: auto;
+		}
+		@include media('>desktop'){
+			left: -5em;
+			&.right{
+				right: -5em;
+			}
+		}
+		.icon{
+			-webkit-transform: translateY(-50%);
+			        transform: translateY(-50%);
+			position: absolute;
+			font-size: 2.4em;
+			color: $black;
+			z-index: 5;
+			top: 50%;
+			&.icon-angle-right{
+				margin-left: -33px;
+			}
+			@include media('>tablet'){
+				font-size: 4.75em;
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+   Help section
+   ========================================================================== */
+.help-section{
+	background-color: #fff;
+	padding: 6.25em 0;
+}
