@@ -1,0 +1,157 @@
+#footer{
+	padding-bottom: 1.5625em;
+	background: $black;
+	position: relative;
+	&:after{
+		background-color: lighten($black, 21%);
+		position: absolute;
+		height: 1px;
+		content: "";
+		width: 100%;
+		left: 0;
+		bottom: 75px;
+	}
+	.footer-holder{
+		padding: 6.25em 0 3.125em;
+	}
+	h5{
+		font-family: $font-family-sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: $white;
+	}
+	.logo-holder{
+		@include media('<=tablet'){
+			margin-bottom: 3.125em;
+		}
+	}
+	.footer-nav{
+		@include font(0.75em, 1.333, 600);
+		text-transform: uppercase;
+		li{
+			+ li{
+				padding-top: 1.0833em;
+			}
+			a{
+				display: inline-block;
+				vertical-align: top;
+				color: $white;
+			}
+		}
+		.tel{
+			color: desaturate($brand-primary, 38%);
+		}
+		@include media('<=tablet'){
+			margin-bottom: 3.125em;
+			text-align: center;
+		}
+	}
+	.contacts{
+		@include media('<=tablet'){
+			text-align: center;
+			display: block;
+		}
+		a{
+			@include display(inline-block, top);
+			color: #949494;
+			&+ a{
+				margin-left: 0.5625em;
+				@include media('>tablet'){
+					margin-left: 1.5625em;
+				}
+			}
+		}
+		.text{
+			font-size: 0.8125em;
+		}
+		.icon{
+			color: desaturate($brand-primary, 38%);
+			margin-right: 0.5625em;
+			&:before{
+				@include display(inline-block, middle);
+				line-height: 0.5625em;
+			}
+		}
+	}
+}
+.social-network{
+	margin: 0 0 0.9375em;
+	text-align: center;
+	@include media('>tablet'){
+		text-align: right;
+	}
+	ul{
+		display: inline-block;
+		vertical-align: top;
+		@extend %clearfix;
+		margin: 0;
+	}
+	li{
+		margin: 0 0.8125em 0 0;
+		float: left;
+	}
+	a{
+		-webkit-transition: all 0.3s ease 0s;
+			transition: all 0.3s ease 0s;
+		background-color: #949494;
+		border-radius: 50%;
+		text-indent: -9999px;
+		text-align: center;
+		position: relative;
+		color: $white;
+		height: 35px;
+		width: 35px;
+		float: left;
+		&:after{
+			@include font(1.25em, 1.75);
+			font-family: icomoon;
+			position: absolute;
+			text-indent: 0;
+			width: 100%;
+			left: 0;
+			top: 0
+		}
+	}
+	.twitter{
+		a:after{
+			content: "\f099";
+		}
+		a:hover{
+			background-color: #00acdc;
+		}
+	}
+	.facebook{
+		a:after{
+			content: "\f09a";
+		}
+		a:hover{
+			background-color: #3b5998;
+		}
+	}
+	.linkedin{
+		a:after{
+			content: "\f0e1";
+		}
+		a:hover{
+			background-color: #0989a9;
+		}
+	}
+}
+.add{
+	text-align: center;
+	@include media('>tablet'){
+		text-align: left;
+	}
+}
+.copyright{
+	@include font(0.8125em,1.5384, 300);
+	a{
+		-webkit-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+		color: $white;
+		&:hover{
+			color: desaturate($brand-primary, 68%);
+			text-decoration: none;
+		}
+	}
+}

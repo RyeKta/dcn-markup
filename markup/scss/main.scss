@@ -16,6 +16,7 @@ $breakpoints: (
 @import 'base/helpers';
 
 @import 'layout/header';
+@import 'layout/footer';
 
 img{
 	max-width: 100%;
@@ -465,4 +466,16 @@ img{
 .help-section{
 	background-color: #fff;
 	padding: 6.25em 0;
+	.more{
+		background-color: lighten($brand-primary, 12%);
+		-webkit-transition: all 0.3s ease 0s;
+		transition: all 0.3s ease 0s;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: 600;
+		color: $white;
+		&:hover{
+			opacity: 0.8;
+		}
+	}
 }
