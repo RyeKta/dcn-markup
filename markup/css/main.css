@@ -22,7 +22,6 @@
   font-style: normal;
 }
 
-/* line 12, E:/Project Markup/designconepal/markup/scss/vendors/icomoon/_icomoon.scss */
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -37,71 +36,58 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 27, E:/Project Markup/designconepal/markup/scss/vendors/icomoon/_icomoon.scss */
 .icon-envelope-o:before {
   content: "\f003";
 }
 
-/* line 30, E:/Project Markup/designconepal/markup/scss/vendors/icomoon/_icomoon.scss */
 .icon-phone:before {
   content: "\f095";
 }
 
-/* line 33, E:/Project Markup/designconepal/markup/scss/vendors/icomoon/_icomoon.scss */
 .icon-twitter:before {
   content: "\f099";
 }
 
-/* line 36, E:/Project Markup/designconepal/markup/scss/vendors/icomoon/_icomoon.scss */
 .icon-facebook:before {
   content: "\f09a";
 }
 
-/* line 39, E:/Project Markup/designconepal/markup/scss/vendors/icomoon/_icomoon.scss */
 .icon-facebook-f:before {
   content: "\f09a";
 }
 
-/* line 42, E:/Project Markup/designconepal/markup/scss/vendors/icomoon/_icomoon.scss */
 .icon-linkedin:before {
   content: "\f0e1";
 }
 
-/* line 45, E:/Project Markup/designconepal/markup/scss/vendors/icomoon/_icomoon.scss */
 .icon-angle-left:before {
   content: "\f104";
 }
 
-/* line 48, E:/Project Markup/designconepal/markup/scss/vendors/icomoon/_icomoon.scss */
 .icon-angle-right:before {
   content: "\f105";
 }
 
-/* line 51, E:/Project Markup/designconepal/markup/scss/vendors/icomoon/_icomoon.scss */
 .icon-quote-left:before {
   content: "\f10d";
 }
 
-/* line 54, E:/Project Markup/designconepal/markup/scss/vendors/icomoon/_icomoon.scss */
 .icon-quote-right:before {
   content: "\f10e";
 }
 
-/* line 2, E:/Project Markup/designconepal/markup/scss/base/_helpers.scss */
 .data-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 10, E:/Project Markup/designconepal/markup/scss/base/_helpers.scss */
 .clearfix:after, .social-network ul:after {
   content: '';
   display: block;
   clear: both;
 }
 
-/* line 50, E:/Project Markup/designconepal/markup/scss/base/_helpers.scss */
 .ellipsis {
   white-space: nowrap;
   /* 1 */
@@ -110,17 +96,14 @@
   overflow: hidden;
 }
 
-/* line 1, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
 #nav {
   position: relative;
 }
 
-/* line 4, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
 .navbar-nav {
   letter-spacing: -4px;
 }
 
-/* line 6, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
 .navbar-nav li {
   text-transform: uppercase;
   margin: 1.3125em 0;
@@ -130,7 +113,6 @@
 }
 
 @media (min-width: 768px) {
-  /* line 6, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
   .navbar-nav li {
     display: inline-block;
     vertical-align: top;
@@ -138,7 +120,6 @@
   }
 }
 
-/* line 16, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
 .navbar-nav li a {
   display: inline-block;
   vertical-align: top;
@@ -150,7 +131,6 @@
   margin: 0 2.083em;
 }
 
-/* line 22, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
 .navbar-nav li a:after {
   background-color: #4b68dd;
   -webkit-transition: all 0.3s ease;
@@ -164,57 +144,47 @@
   width: 0;
 }
 
-/* line 35, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
 .navbar-nav li a:hover:after {
   width: 100%;
 }
 
-/* line 43, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
 .navbar-nav .active a:after {
   width: 100%;
 }
 
-/* line 48, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
 .navbar-nav .active a:hover:after, .navbar-nav .active a:focus:after {
   width: 100%;
 }
 
-/* line 55, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
 .navbar-brand {
   margin: 5px 0;
   width: 40px;
 }
 
 @media (min-width: 768px) {
-  /* line 55, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
   .navbar-brand {
     margin: 13px 15px 12px;
     width: 50px;
   }
 }
 
-/* line 63, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
 .navbar-toggle {
   margin: 1em 0 0 0;
   padding: 0;
 }
 
-/* line 66, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
 .navbar-toggle:hover {
   opacity: 0.8;
 }
 
-/* line 69, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
 .navbar-toggle .icon-bar {
   width: 1.5625em;
 }
 
-/* line 71, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 0.375em;
 }
 
-/* line 76, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
 #main-nav {
   -webkit-box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(0, 0, 0, 0.1) inset;
@@ -228,7 +198,6 @@
 }
 
 @media (min-width: 768px) {
-  /* line 76, E:/Project Markup/designconepal/markup/scss/layout/_header.scss */
   #main-nav {
     position: static;
     -webkit-box-shadow: none;
@@ -237,14 +206,12 @@
   }
 }
 
-/* line 1, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 #footer {
   padding-bottom: 1.5625em;
   background: #030611;
   position: relative;
 }
 
-/* line 5, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 #footer:after {
   background-color: #13266c;
   position: absolute;
@@ -255,12 +222,10 @@
   bottom: 75px;
 }
 
-/* line 14, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 #footer .footer-holder {
   padding: 6.25em 0 3.125em;
 }
 
-/* line 17, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 #footer h5 {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -269,13 +234,11 @@
 }
 
 @media (max-width: 767px) {
-  /* line 23, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
   #footer .logo-holder {
     margin-bottom: 3.125em;
   }
 }
 
-/* line 28, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 #footer .footer-nav {
   font-size: 0.75em;
   line-height: 1.333;
@@ -283,25 +246,21 @@
   text-transform: uppercase;
 }
 
-/* line 32, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 #footer .footer-nav li + li {
   padding-top: 1.0833em;
 }
 
-/* line 35, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 #footer .footer-nav li a {
   display: inline-block;
   vertical-align: top;
   color: #f7f8fd;
 }
 
-/* line 41, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 #footer .footer-nav .tel {
   color: #7481b4;
 }
 
 @media (max-width: 767px) {
-  /* line 28, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
   #footer .footer-nav {
     margin-bottom: 3.125em;
     text-align: center;
@@ -309,77 +268,65 @@
 }
 
 @media (max-width: 767px) {
-  /* line 49, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
   #footer .contacts {
     text-align: center;
     display: block;
   }
 }
 
-/* line 54, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 #footer .contacts a {
   display: inline-block;
   vertical-align: top;
   color: #949494;
 }
 
-/* line 57, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 #footer .contacts a + a {
   margin-left: 0.5625em;
 }
 
 @media (min-width: 768px) {
-  /* line 57, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
   #footer .contacts a + a {
     margin-left: 1.5625em;
   }
 }
 
-/* line 64, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 #footer .contacts .text {
   font-size: 0.8125em;
 }
 
-/* line 67, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 #footer .contacts .icon {
   color: #7481b4;
   margin-right: 0.5625em;
 }
 
-/* line 70, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 #footer .contacts .icon:before {
   display: inline-block;
   vertical-align: middle;
   line-height: 0.5625em;
 }
 
-/* line 77, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 .social-network {
   margin: 0 0 0.9375em;
   text-align: center;
 }
 
 @media (min-width: 768px) {
-  /* line 77, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
   .social-network {
     text-align: right;
   }
 }
 
-/* line 83, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 .social-network ul {
   display: inline-block;
   vertical-align: top;
   margin: 0;
 }
 
-/* line 89, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 .social-network li {
   margin: 0 0.8125em 0 0;
   float: left;
 }
 
-/* line 93, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 .social-network a {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -394,7 +341,6 @@
   float: left;
 }
 
-/* line 105, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 .social-network a:after {
   font-size: 1.25em;
   line-height: 1.75;
@@ -407,69 +353,151 @@
   top: 0;
 }
 
-/* line 116, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 .social-network .twitter a:after {
   content: "\f099";
 }
 
-/* line 119, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 .social-network .twitter a:hover {
   background-color: #00acdc;
 }
 
-/* line 124, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 .social-network .facebook a:after {
   content: "\f09a";
 }
 
-/* line 127, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 .social-network .facebook a:hover {
   background-color: #3b5998;
 }
 
-/* line 132, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 .social-network .linkedin a:after {
   content: "\f0e1";
 }
 
-/* line 135, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 .social-network .linkedin a:hover {
   background-color: #0989a9;
 }
 
-/* line 140, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 .add {
   text-align: center;
 }
 
 @media (min-width: 768px) {
-  /* line 140, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
   .add {
     text-align: left;
   }
 }
 
-/* line 146, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 .copyright {
   font-size: 0.8125em;
   line-height: 1.5384;
   font-weight: 300;
 }
 
-/* line 148, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 .copyright a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #f7f8fd;
 }
 
-/* line 152, E:/Project Markup/designconepal/markup/scss/layout/_footer.scss */
 .copyright a:hover {
   color: #949494;
   text-decoration: none;
 }
 
-/* line 21, E:/Project Markup/designconepal/markup/scss/main.scss */
+.story-head {
+  padding: 6.25em 0 0;
+}
+
+.story-head .head-content {
+  color: #4b68dd;
+}
+
+@media (min-width: 768px) {
+  .story-head .head-content {
+    table-layout: fixed;
+    display: table;
+    width: 100%;
+  }
+  .story-head .head-content [class^='col-'] {
+    vertical-align: middle;
+    display: table-cell;
+    float: none;
+  }
+}
+
+.story-head .slogan {
+  font-size: 1.5625em;
+  line-height: 1.56;
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: top;
+  color: #f6a38b;
+  font-family: Lora, "Times New Roman", Times, serif;
+  margin-top: 2.64em;
+  font-style: italic;
+}
+
+.story-head .page-title {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 7.4375em;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4b68dd;
+  margin: 0 0 0.168em;
+}
+
+.story-head .page-title span {
+  display: block;
+}
+
+.story-head .page-intro {
+  font-size: 1.5625em;
+  line-height: 1.56;
+  font-weight: 600;
+  color: #030611;
+}
+
+.whoweare {
+  padding: 6.25em 0 0;
+}
+
+.who-wrapper {
+  padding: 0 0 3.125em;
+}
+
+.our-skills {
+  padding: 1.5625em 0 0;
+}
+
+.our-skills h3 {
+  text-transform: capitalize;
+  margin: 0 0 1.8em;
+  font-weight: 300;
+}
+
+.our-skills h3:after {
+  background-color: #4b68dd;
+  margin: 25px auto 0;
+  display: block;
+  content: "";
+  height: 2px;
+  width: 39px;
+}
+
+.our-skills ul li {
+  padding-bottom: 0.8125em;
+  color: #e14111;
+}
+
+.our-skills ul li:last-child {
+  padding-bottom: 0;
+}
+
+.values-block {
+  padding: 6.25em 0 0;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -478,7 +506,6 @@ img {
 /* ==========================================================================
    Hero Banner
    ========================================================================== */
-/* line 28, E:/Project Markup/designconepal/markup/scss/main.scss */
 .hero-banner {
   position: relative;
   overflow: hidden;
@@ -487,13 +514,11 @@ img {
 }
 
 @media (min-width: 768px) {
-  /* line 28, E:/Project Markup/designconepal/markup/scss/main.scss */
   .hero-banner {
     padding: 100px 0;
   }
 }
 
-/* line 37, E:/Project Markup/designconepal/markup/scss/main.scss */
 .bg-stretch {
   position: absolute;
   top: 0;
@@ -503,14 +528,12 @@ img {
   z-index: -1;
 }
 
-/* line 44, E:/Project Markup/designconepal/markup/scss/main.scss */
 .bg-stretch img {
   max-width: none;
   height: auto;
   width: 100%;
 }
 
-/* line 51, E:/Project Markup/designconepal/markup/scss/main.scss */
 .top-info h1 {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #f7f8fd;
@@ -519,29 +542,24 @@ img {
 }
 
 @media (min-width: 480px) {
-  /* line 50, E:/Project Markup/designconepal/markup/scss/main.scss */
   .top-info {
     width: 450px;
   }
 }
 
 @media (min-width: 640px) {
-  /* line 50, E:/Project Markup/designconepal/markup/scss/main.scss */
   .top-info {
     width: 600px;
   }
-  /* line 62, E:/Project Markup/designconepal/markup/scss/main.scss */
   .top-info h1 {
     font-size: 48px;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 50, E:/Project Markup/designconepal/markup/scss/main.scss */
   .top-info {
     width: auto;
   }
-  /* line 68, E:/Project Markup/designconepal/markup/scss/main.scss */
   .top-info h1 {
     font-size: 61px;
     margin-bottom: 73px;
@@ -549,30 +567,25 @@ img {
 }
 
 @media (min-width: 992px) {
-  /* line 50, E:/Project Markup/designconepal/markup/scss/main.scss */
   .top-info {
     width: 800px;
   }
-  /* line 75, E:/Project Markup/designconepal/markup/scss/main.scss */
   .top-info h1 {
     font-size: 76px;
   }
 }
 
-/* line 79, E:/Project Markup/designconepal/markup/scss/main.scss */
 .top-info p {
   margin-bottom: 36px;
   font-size: 25px;
 }
 
 @media (min-width: 768px) {
-  /* line 79, E:/Project Markup/designconepal/markup/scss/main.scss */
   .top-info p {
     margin-bottom: 61px;
   }
 }
 
-/* line 86, E:/Project Markup/designconepal/markup/scss/main.scss */
 .top-info .btn {
   text-transform: uppercase;
   color: #4b68dd;
@@ -583,14 +596,12 @@ img {
   font-weight: 600;
 }
 
-/* line 95, E:/Project Markup/designconepal/markup/scss/main.scss */
 .top-info .btn-primary {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   background-color: transparent;
 }
 
-/* line 99, E:/Project Markup/designconepal/markup/scss/main.scss */
 .top-info .btn-primary:hover {
   background-color: #4b68dd;
   border-color: #4b68dd;
@@ -600,13 +611,11 @@ img {
 /* ==========================================================================
    Clients logo list
    ========================================================================== */
-/* line 109, E:/Project Markup/designconepal/markup/scss/main.scss */
 .logo-panel {
   background-color: #fff;
   padding: 0.8125em 0;
 }
 
-/* line 112, E:/Project Markup/designconepal/markup/scss/main.scss */
 .logo-panel .title {
   font-size: 0.875em;
   line-height: 1.4285;
@@ -617,13 +626,11 @@ img {
   color: #949494;
 }
 
-/* line 120, E:/Project Markup/designconepal/markup/scss/main.scss */
 .logo-wrap {
   letter-spacing: -5px;
   margin: 0;
 }
 
-/* line 123, E:/Project Markup/designconepal/markup/scss/main.scss */
 .logo-wrap li {
   vertical-align: middle;
   display: inline-block;
@@ -632,14 +639,12 @@ img {
   letter-spacing: 0;
 }
 
-/* line 129, E:/Project Markup/designconepal/markup/scss/main.scss */
 .logo-wrap li a {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   display: block;
 }
 
-/* line 133, E:/Project Markup/designconepal/markup/scss/main.scss */
 .logo-wrap li a:hover {
   opacity: 0.8;
 }
@@ -647,24 +652,20 @@ img {
 /* ==========================================================================
    Intro Section
    ========================================================================== */
-/* line 142, E:/Project Markup/designconepal/markup/scss/main.scss */
 .section-heading {
   margin: 0 0 3.125em;
 }
 
-/* line 144, E:/Project Markup/designconepal/markup/scss/main.scss */
 .section-heading h2 {
   text-transform: uppercase;
   margin: 0 0 1.1818em;
   letter-spacing: 2px;
 }
 
-/* line 150, E:/Project Markup/designconepal/markup/scss/main.scss */
 .intro-section {
   padding: 6.25em 0;
 }
 
-/* line 152, E:/Project Markup/designconepal/markup/scss/main.scss */
 .intro-section .more {
   color: #f38665;
   margin: 0.8125em 0 2.3125em;
@@ -675,21 +676,18 @@ img {
   transition: all 0.3s ease 0s;
 }
 
-/* line 160, E:/Project Markup/designconepal/markup/scss/main.scss */
 .intro-section .more:hover {
   text-decoration: none;
   color: #e14111;
 }
 
 @media (min-width: 768px) {
-  /* line 152, E:/Project Markup/designconepal/markup/scss/main.scss */
   .intro-section .more {
     margin-left: 6.25em;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 169, E:/Project Markup/designconepal/markup/scss/main.scss */
   .intro-list {
     letter-spacing: -5px;
     margin: 0 -1.5625em;
@@ -697,7 +695,6 @@ img {
 }
 
 @media (min-width: 768px) {
-  /* line 174, E:/Project Markup/designconepal/markup/scss/main.scss */
   .intro-list .intro {
     display: inline-block;
     vertical-align: top;
@@ -706,58 +703,49 @@ img {
   }
 }
 
-/* line 183, E:/Project Markup/designconepal/markup/scss/main.scss */
 .intro {
   margin: 0 0 1.5625em;
 }
 
 @media (min-width: 768px) {
-  /* line 183, E:/Project Markup/designconepal/markup/scss/main.scss */
   .intro {
     padding: 0 1.5625em;
   }
 }
 
-/* line 188, E:/Project Markup/designconepal/markup/scss/main.scss */
 .intro .intro-icon {
   text-align: center;
 }
 
 @media (min-width: 481px) {
-  /* line 188, E:/Project Markup/designconepal/markup/scss/main.scss */
   .intro .intro-icon {
     width: 75px;
     float: left;
   }
 }
 
-/* line 195, E:/Project Markup/designconepal/markup/scss/main.scss */
 .intro .glyphicon {
   color: #5970cf;
   line-height: 1.2;
   font-size: 61px;
 }
 
-/* line 200, E:/Project Markup/designconepal/markup/scss/main.scss */
 .intro .intro-text {
   overflow: hidden;
 }
 
 @media (min-width: 481px) {
-  /* line 200, E:/Project Markup/designconepal/markup/scss/main.scss */
   .intro .intro-text {
     padding-left: 1.5625em;
   }
 }
 
-/* line 205, E:/Project Markup/designconepal/markup/scss/main.scss */
 .intro .intro-text h3 {
   text-align: center;
   margin: 0 0 0.88em;
 }
 
 @media (min-width: 481px) {
-  /* line 205, E:/Project Markup/designconepal/markup/scss/main.scss */
   .intro .intro-text h3 {
     text-align: left;
   }
@@ -766,20 +754,17 @@ img {
 /* ==========================================================================
    Services section
    ========================================================================== */
-/* line 217, E:/Project Markup/designconepal/markup/scss/main.scss */
 .services-section {
   background-color: #fff;
   padding: 6.25em 0;
 }
 
-/* line 221, E:/Project Markup/designconepal/markup/scss/main.scss */
 .services-section .section-heading p {
   font-weight: 300;
   margin: 0 0 2em;
 }
 
 @media (min-width: 992px) {
-  /* line 221, E:/Project Markup/designconepal/markup/scss/main.scss */
   .services-section .section-heading p {
     font-size: 1.25em;
     line-height: 1.75;
@@ -787,7 +772,6 @@ img {
   }
 }
 
-/* line 228, E:/Project Markup/designconepal/markup/scss/main.scss */
 .services-section .section-heading .more {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -798,7 +782,6 @@ img {
 }
 
 @media (min-width: 480px) {
-  /* line 228, E:/Project Markup/designconepal/markup/scss/main.scss */
   .services-section .section-heading .more {
     width: auto;
   }
@@ -807,7 +790,6 @@ img {
 /* ==========================================================================
    Data block
    ========================================================================== */
-/* line 244, E:/Project Markup/designconepal/markup/scss/main.scss */
 .data-block {
   background-color: #ef5d31;
   text-align: center;
@@ -815,17 +797,14 @@ img {
   color: #f7f8fd;
 }
 
-/* line 250, E:/Project Markup/designconepal/markup/scss/main.scss */
 .data-block .section-heading h2 {
   color: #f7f8fd;
 }
 
-/* line 255, E:/Project Markup/designconepal/markup/scss/main.scss */
 .data-list {
   letter-spacing: -5px;
 }
 
-/* line 258, E:/Project Markup/designconepal/markup/scss/main.scss */
 .data-list .data {
   padding: 1.5625em 1.5625em 0;
   position: relative;
@@ -833,13 +812,11 @@ img {
   margin-bottom: 50px;
 }
 
-/* line 263, E:/Project Markup/designconepal/markup/scss/main.scss */
 .data-list .data:first-child {
   border-left: none;
 }
 
 @media (max-width: 479px) {
-  /* line 267, E:/Project Markup/designconepal/markup/scss/main.scss */
   .data-list .data:before {
     background-color: #e14111;
     margin: 0 0 0 -75px;
@@ -850,14 +827,12 @@ img {
     content: "";
     left: 50%;
   }
-  /* line 278, E:/Project Markup/designconepal/markup/scss/main.scss */
   .data-list .data:first-child:before {
     background-color: transparent;
   }
 }
 
 @media (min-width: 480px) {
-  /* line 258, E:/Project Markup/designconepal/markup/scss/main.scss */
   .data-list .data {
     border-left: 1px solid #e14111;
     display: inline-block;
@@ -867,11 +842,9 @@ img {
 }
 
 @media (min-width: 480px) and (max-width: 991px) {
-  /* line 289, E:/Project Markup/designconepal/markup/scss/main.scss */
   .data-list .data:last-child {
     border-left: none;
   }
-  /* line 291, E:/Project Markup/designconepal/markup/scss/main.scss */
   .data-list .data:last-child:before {
     background-color: #e14111;
     margin: 0 0 0 -75px;
@@ -885,13 +858,11 @@ img {
 }
 
 @media (min-width: 992px) {
-  /* line 258, E:/Project Markup/designconepal/markup/scss/main.scss */
   .data-list .data {
     width: 33.33%;
   }
 }
 
-/* line 306, E:/Project Markup/designconepal/markup/scss/main.scss */
 .data-list .data .glyphicon {
   color: #d83e10;
   font-size: 4.75em;
@@ -900,7 +871,6 @@ img {
 }
 
 @media (min-width: 992px) {
-  /* line 306, E:/Project Markup/designconepal/markup/scss/main.scss */
   .data-list .data .glyphicon {
     padding-right: 0.3289em;
     width: 95px;
@@ -909,14 +879,12 @@ img {
 }
 
 @media (min-width: 992px) {
-  /* line 315, E:/Project Markup/designconepal/markup/scss/main.scss */
   .data-list .data .text-wrap {
     overflow: hidden;
     text-align: left;
   }
 }
 
-/* line 320, E:/Project Markup/designconepal/markup/scss/main.scss */
 .data-list .data .text-wrap h3 {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 3em;
@@ -926,7 +894,6 @@ img {
   color: #f7f8fd;
 }
 
-/* line 326, E:/Project Markup/designconepal/markup/scss/main.scss */
 .data-list .data .text-wrap .text {
   font-size: 0.75em;
   line-height: 1.333;
@@ -935,7 +902,6 @@ img {
   text-transform: uppercase;
 }
 
-/* line 333, E:/Project Markup/designconepal/markup/scss/main.scss */
 .data-list .data-holder {
   overflow: hidden;
 }
@@ -943,12 +909,10 @@ img {
 /* ==========================================================================
    Testimonial block
    ========================================================================== */
-/* line 340, E:/Project Markup/designconepal/markup/scss/main.scss */
 .testimonial-block {
   padding: 6.25em 0 3.125em;
 }
 
-/* line 342, E:/Project Markup/designconepal/markup/scss/main.scss */
 .testimonial-block .testimonial-holder {
   -webkit-box-shadow: 0 2px 25px 0 rgba(3, 6, 17, 0.1);
   box-shadow: 0 2px 25px 0 rgba(3, 6, 17, 0.1);
@@ -959,14 +923,12 @@ img {
 }
 
 @media (min-width: 768px) {
-  /* line 342, E:/Project Markup/designconepal/markup/scss/main.scss */
   .testimonial-block .testimonial-holder {
     padding: 6.25em 6.25em 0;
     width: 568px;
   }
 }
 
-/* line 353, E:/Project Markup/designconepal/markup/scss/main.scss */
 .testimonial-block .testimonial-holder .img-holder {
   position: absolute;
   border-radius: 50%;
@@ -979,19 +941,16 @@ img {
 }
 
 @media (min-width: 768px) {
-  /* line 353, E:/Project Markup/designconepal/markup/scss/main.scss */
   .testimonial-block .testimonial-holder .img-holder {
     width: 6.25em;
     height: 6.25em;
   }
 }
 
-/* line 366, E:/Project Markup/designconepal/markup/scss/main.scss */
 .testimonial-block .testimonial-holder .img-holder img {
   min-width: 100%;
 }
 
-/* line 371, E:/Project Markup/designconepal/markup/scss/main.scss */
 .testimonial-block blockquote {
   padding: 1.5625em 0 1.5625em 4.6875em;
   position: relative;
@@ -1000,13 +959,11 @@ img {
 }
 
 @media (min-width: 768px) {
-  /* line 371, E:/Project Markup/designconepal/markup/scss/main.scss */
   .testimonial-block blockquote {
     padding-left: 7.8125em;
   }
 }
 
-/* line 379, E:/Project Markup/designconepal/markup/scss/main.scss */
 .testimonial-block blockquote:before {
   color: #f6f372;
   font-size: 3em;
@@ -1023,14 +980,12 @@ img {
 }
 
 @media (min-width: 768px) {
-  /* line 379, E:/Project Markup/designconepal/markup/scss/main.scss */
   .testimonial-block blockquote:before {
     font-size: 3.8125em;
     width: 1.639em;
   }
 }
 
-/* line 395, E:/Project Markup/designconepal/markup/scss/main.scss */
 .testimonial-block blockquote q {
   color: #1b328e;
   font-size: 1.5625em;
@@ -1040,74 +995,61 @@ img {
   display: block;
 }
 
-/* line 400, E:/Project Markup/designconepal/markup/scss/main.scss */
 .testimonial-block blockquote q:before, .testimonial-block blockquote q:after {
   content: "";
 }
 
 @media (min-width: 768px) {
-  /* line 395, E:/Project Markup/designconepal/markup/scss/main.scss */
   .testimonial-block blockquote q {
     font-size: 1.9375em;
     line-height: 1.3548;
   }
 }
 
-/* line 410, E:/Project Markup/designconepal/markup/scss/main.scss */
 .testimonial-block .footline {
   background-color: #f6f372;
   margin: 0 -6.25em;
 }
 
-/* line 413, E:/Project Markup/designconepal/markup/scss/main.scss */
 .testimonial-block .footline .footline-holder {
   padding: 1.5625em 6.25em 3.125em;
 }
 
-/* line 416, E:/Project Markup/designconepal/markup/scss/main.scss */
 .testimonial-block .footline p {
   text-align: center;
 }
 
-/* line 419, E:/Project Markup/designconepal/markup/scss/main.scss */
 .testimonial-block .footline cite {
   font-style: normal;
   display: block;
   color: #030611;
 }
 
-/* line 426, E:/Project Markup/designconepal/markup/scss/main.scss */
 .testimonial-block .carousel-inner > .item {
   padding: 50px 0;
 }
 
-/* line 430, E:/Project Markup/designconepal/markup/scss/main.scss */
 .testimonial-block .carousel-control {
   width: auto;
 }
 
-/* line 432, E:/Project Markup/designconepal/markup/scss/main.scss */
 .testimonial-block .carousel-control.left, .testimonial-block .carousel-control.right {
   background-image: none;
 }
 
-/* line 436, E:/Project Markup/designconepal/markup/scss/main.scss */
 .testimonial-block .carousel-control.right {
   left: auto;
 }
 
 @media (min-width: 992px) {
-  /* line 430, E:/Project Markup/designconepal/markup/scss/main.scss */
   .testimonial-block .carousel-control {
     left: -5em;
   }
-  /* line 441, E:/Project Markup/designconepal/markup/scss/main.scss */
   .testimonial-block .carousel-control.right {
     right: -5em;
   }
 }
 
-/* line 445, E:/Project Markup/designconepal/markup/scss/main.scss */
 .testimonial-block .carousel-control .icon {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1118,13 +1060,11 @@ img {
   top: 50%;
 }
 
-/* line 453, E:/Project Markup/designconepal/markup/scss/main.scss */
 .testimonial-block .carousel-control .icon.icon-angle-right {
   margin-left: -33px;
 }
 
 @media (min-width: 768px) {
-  /* line 445, E:/Project Markup/designconepal/markup/scss/main.scss */
   .testimonial-block .carousel-control .icon {
     font-size: 4.75em;
   }
@@ -1133,13 +1073,11 @@ img {
 /* ==========================================================================
    Help section
    ========================================================================== */
-/* line 466, E:/Project Markup/designconepal/markup/scss/main.scss */
 .help-section {
   background-color: #fff;
   padding: 6.25em 0;
 }
 
-/* line 469, E:/Project Markup/designconepal/markup/scss/main.scss */
 .help-section .more {
   background-color: #7e93e7;
   -webkit-transition: all 0.3s ease 0s;
@@ -1150,9 +1088,6 @@ img {
   color: #f7f8fd;
 }
 
-/* line 477, E:/Project Markup/designconepal/markup/scss/main.scss */
 .help-section .more:hover {
   opacity: 0.8;
 }
-
-/*# sourceMappingURL=../css/main.map */

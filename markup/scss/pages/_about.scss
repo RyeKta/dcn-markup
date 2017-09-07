@@ -1,0 +1,72 @@
+.story-head{
+	padding: 6.25em 0 0;
+	.head-content{
+		color: $brand-primary;
+		@include media('>tablet'){
+			table-layout: fixed;
+			display: table;
+			width: 100%;
+			[class^='col-']{
+				vertical-align: middle;
+				display: table-cell;
+				float: none;
+			}
+		}
+	}
+	.slogan{
+		@include font(1.5625em,1.56);
+		@include display(inline-block,top);
+		color: lighten($brand-danger, 28%);
+		font-family: $font-family-serif;
+		margin-top: 2.64em;
+		font-style: italic;
+	}
+	.page-title{
+		font-family: $font-family-sans-serif;
+		@include font(7.4375em, 1, 700);
+		text-transform: uppercase;
+		color: $brand-primary;
+		margin: 0 0 0.168em;
+		span{
+			display: block;
+		}
+	}
+	.page-intro{
+		@include font(1.5625em, 1.56, 600);
+		color: $black;
+	}
+}
+.whoweare{
+	padding: 6.25em 0 0;
+}
+.who-wrapper{
+	padding: 0 0 3.125em;
+}
+.our-skills{
+	padding: 1.5625em 0 0;
+	h3{
+		text-transform: capitalize;
+		margin: 0 0 1.8em;
+		font-weight: 300;
+		&:after{
+			background-color: $brand-primary;
+			margin: 25px auto 0;
+			display: block;
+			content: "";
+			height: 2px;
+			width: 39px;
+		}
+	}
+	ul{
+		li{
+			padding-bottom: 0.8125em;
+			color: $brand-danger;
+			&:last-child{
+				padding-bottom: 0;
+			}
+		}
+	}
+}
+.values-block{
+	padding: 6.25em 0 0;
+}
