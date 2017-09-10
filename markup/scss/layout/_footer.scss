@@ -145,6 +145,7 @@
 }
 .copyright{
 	@include font(0.8125em,1.5384, 300);
+	color: $white;
 	a{
 		-webkit-transition: all 0.3s ease;
 		transition: all 0.3s ease;

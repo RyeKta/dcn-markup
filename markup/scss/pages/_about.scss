@@ -1,5 +1,8 @@
 .story-head{
-	padding: 6.25em 0 0;
+	padding: 3.125em 0 0;
+	@include media('>tablet'){
+		padding: 6.25em 0 0;
+	}
 	.head-content{
 		color: $brand-primary;
 		@include media('>tablet'){
@@ -23,21 +26,35 @@
 	}
 	.page-title{
 		font-family: $font-family-sans-serif;
-		@include font(7.4375em, 1, 700);
+		@include font(5.625em, 1 ,700);
 		text-transform: uppercase;
 		color: $brand-primary;
 		margin: 0 0 0.168em;
+		text-align: center;
 		span{
 			display: block;
 		}
+		@include media('>tablet'){
+			font-size: 7.4375em;
+			text-align: left;
+		}
 	}
 	.page-intro{
-		@include font(1.5625em, 1.56, 600);
+		@include font(1.25em, 1.55, 600);
+		text-align: center;
 		color: $black;
+		@include media('>tablet'){
+			font-size: 1.5625em;
+			text-align: left;
+			line-height: 1.56;
+		}
 	}
 }
 .whoweare{
-	padding: 6.25em 0 0;
+	padding: 3.125em 0 0;
+	@include media('>tablet'){
+		padding: 6.25em 0 0;
+	}
 }
 .who-wrapper{
 	padding: 0 0 3.125em;
@@ -69,11 +86,16 @@
 }
 .values-block{
 	margin-bottom: 1.5625em;
-	padding: 6.25em 0 0;
+	padding: 3.125em 0 0;
+	@include media('>tablet'){
+		padding: 6.25em 0 0;
+	}
 	.carousel-inner{
 		padding-bottom: 3.125em;
 		margin: 0 auto;
-		width: 568px;
+		@include media('>s-phone'){
+			width: 568px;
+		}
 	}
 	.carousel-control{
 		&.left,
@@ -84,7 +106,7 @@
 	.carousel-indicators{
 		top: 100%;
 		li{
-			@include font(0.8125em,1.769);
+			@include font(0.8125em,1.692);
 			border: 1px solid transparent;
 			vertical-align: top;
 			border-radius: 50%;
@@ -101,6 +123,24 @@
 		.icon{
 			@include font(4.65em,1,400);
 		}
+		.icon-angle-left,
+		.icon-angle-right{
+			display: inline-block;
+			position: absolute;
+			margin-top: -10px;
+			z-index: 5;
+			@include media('<s-phone'){
+				top: 50%;
+			}
+		}
+		.icon-angle-left{
+			left: 50%;
+			margin-left: -10px;
+		}
+		.icon-angle-right{
+			right: 50%;
+			margin-right: -10px;
+		}
 	}
 }
 .value-list{
@@ -109,25 +149,38 @@
 	width: 100%;
 	.value-count,
 	.value-content{
-		@include display(table-cell, middle);
+		vertical-align: middle;
+		text-align: center;
+		@include media('>s-phone'){
+			text-align: left;
+		}
 	}
 	.value-count{
 		@include font(4.75em,1,700);
+		display: table-header-group;
 		color: $brand-primary;
 		position: relative;
 		width: 20%;
-		&:after{
-			background-color: lighten($brand-danger, 20%);
-			position: absolute;
-			content: "";
-			width: 2px;
-			height: 90%;
-			right: 19px;
-			top: 6px;
+		@include media('>s-phone'){
+			display: table-cell;
+			&:after{
+				background-color: lighten($brand-danger, 20%);
+				position: absolute;
+				content: "";
+				width: 2px;
+				height: 90%;
+				right: 19px;
+				top: 6px;
+			}
 		}
 	}
 	.value-content{
+		padding: 1.5625em 0 0;
+		display: table-cell;
 		width: 80%;
+		@include media('>s-phone'){
+			padding-top: 0;
+		}
 		h3{
 			@include font(1.9375em,1, 400);
 			font-family: $font-family-serif;
@@ -142,14 +195,74 @@
 	}
 }
 .clients-list{
-	padding: 6.25em 0 0;
+	padding: 3.125em 0 0;
+	@include media('>tablet'){
+		padding: 6.25em 0 0;
+	}
 	.clients-logo{
-		letter-spacing: -5px;
+		@extend %clearfix;
 		text-align: center;
 		li{
-			@include display(inline-block, top);
-			letter-spacing: 0;
-			width: 20%;
+			float: left;
+			min-height: 200px;
+			white-space: nowrap;
+			width: 50%;
+			border-width: 0 0 1px 1px;
+			border-style: solid;
+			border-color: lighten($brand-danger, 45%);
+			@include media('>desktop'){
+				width: 25%;
+			}
+			&:nth-child(4n + 1){
+					border-left: none;
+				}
+			@include media('<=desktop'){
+				&:nth-child(2n + 1){
+					border-left: none;
+				}
+			}
+			&:nth-last-child(-n + 1){
+				border-bottom: none;
+			}
+			&:after{
+				content: "";
+				display: inline-block;
+				vertical-align: middle;
+				overflow: hidden;
+				height: 200px;
+				width: 1px;
+			}
+			img{
+				display: inline-block;
+				vertical-align: middle;
+				white-space: normal;
+				max-width: 100px;
+			}
+		}
+	}
+}
+.start-project{
+	padding: 4.6875em 0 3.125em;
+	background: #fff;
+	h3{
+		margin: 0 0 1.88em;
+		font-weight: 300;
+	}
+	.btn{
+		-webkit-transition: all 0.3s ease 0s;
+		@include font(0.8125em,1.2307);
+		transition: all 0.3s ease 0s;
+		text-transform: uppercase;
+		border: 3px solid $black;
+		padding: 1.2307em 3em;
+		border-radius: 32px;
+		font-weight: 700;
+		color: $black;
+		&:hover{
+			-webkit-transform: scale(1.05);
+			        transform: scale(1.05);
+			background-color: $black;
+			color: $white;
 		}
 	}
 }
