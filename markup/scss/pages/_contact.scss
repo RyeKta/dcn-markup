@@ -1,0 +1,79 @@
+.contact{
+	padding: 3.125em 0;
+	@include media('>tablet'){
+		padding: 6.25em 0;
+	}
+	.section-heading{
+		h1{
+			text-transform: uppercase;
+			margin: 0 0 0.82051em;
+		}
+		margin-bottom: 0;
+	}
+}
+.section-content{
+	h2{
+		color: desaturate($brand-primary, 38%);
+		@include font(1.5625em,1, 700);
+		text-transform: uppercase;
+		margin: 0 0 1em;
+	}
+}
+.section-content{
+	padding: 0 0 3.125em;
+}
+.map-block{
+	margin-bottom:3.125em;
+	overflow: hidden;
+}
+.contact-holder{
+	address{
+		@include font(0.8125em,1.5384);
+	}
+	margin: 0 0 3.125em;
+}
+.contact-info{
+	overflow: hidden;
+	dt{
+		color: desaturate($brand-primary, 38%);
+		text-transform: capitalize;
+		margin: 0 1em 0 0;
+		float: left;
+	}
+	dd{
+		overflow: hidden;
+	}
+	.tel{
+		color: desaturate($brand-primary, 68%);
+	}
+}
+.contact-form{
+	background-color: lighten($brand-danger, 49%);
+	border-radius: 3px;
+	padding: 0.8125em;
+	margin: 0;
+	@include media('>tablet'){
+		padding: 1.5625em;
+	}
+	.form-control{
+		border-color: lighten($brand-danger, 44%);
+		@include font(0.8125em,1.5384,400);
+		-webkit-box-shadow: none;
+		        box-shadow: none;
+		        color: $black;
+		border-radius: 0;
+		&:focus{
+			border-color: lighten($brand-danger, 34%);
+			-webkit-box-shadow: none;
+			        box-shadow: none;
+		}
+	}
+	.btn{
+		@include font(0.8125em,1.5384,600);
+		-webkit-transition: all 0.3s ease 0s;
+		transition: all 0.3s ease 0s;
+		text-transform: uppercase;
+		border-radius: 20px;
+		min-width: 9.1538em;
+	}
+}
