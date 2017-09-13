@@ -786,7 +786,6 @@
 }
 
 .section-content h2 {
-  color: #7481b4;
   font-size: 1.5625em;
   line-height: 1;
   font-weight: 700;
@@ -818,7 +817,7 @@
 }
 
 .contact-info dt {
-  color: #7481b4;
+  /*color: desaturate($brand-primary, 38%);*/
   text-transform: capitalize;
   margin: 0 1em 0 0;
   float: left;
@@ -845,6 +844,10 @@
   }
 }
 
+.contact-form .form-group {
+  margin-bottom: 1.5em;
+}
+
 .contact-form .form-control {
   border-color: #fcdfd6;
   font-size: 0.8125em;
@@ -862,6 +865,10 @@
   box-shadow: none;
 }
 
+.contact-form .form-button {
+  padding: 0.5em 0;
+}
+
 .contact-form .btn {
   font-size: 0.8125em;
   line-height: 1.5384;
@@ -869,6 +876,7 @@
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   text-transform: uppercase;
+  padding: 0.692em 1em;
   border-radius: 20px;
   min-width: 9.1538em;
 }

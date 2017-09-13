@@ -13,7 +13,6 @@
 }
 .section-content{
 	h2{
-		color: desaturate($brand-primary, 38%);
 		@include font(1.5625em,1, 700);
 		text-transform: uppercase;
 		margin: 0 0 1em;
@@ -35,7 +34,7 @@
 .contact-info{
 	overflow: hidden;
 	dt{
-		color: desaturate($brand-primary, 38%);
+		/*color: desaturate($brand-primary, 38%);*/
 		text-transform: capitalize;
 		margin: 0 1em 0 0;
 		float: left;
@@ -55,6 +54,9 @@
 	@include media('>tablet'){
 		padding: 1.5625em;
 	}
+	.form-group{
+		margin-bottom: 1.5em;
+	}
 	.form-control{
 		border-color: lighten($brand-danger, 44%);
 		@include font(0.8125em,1.5384,400);
@@ -68,11 +70,15 @@
 			        box-shadow: none;
 		}
 	}
+	.form-button{
+		padding: 0.5em 0;
+	}
 	.btn{
 		@include font(0.8125em,1.5384,600);
 		-webkit-transition: all 0.3s ease 0s;
 		transition: all 0.3s ease 0s;
 		text-transform: uppercase;
+		padding: 0.692em 1em;
 		border-radius: 20px;
 		min-width: 9.1538em;
 	}
