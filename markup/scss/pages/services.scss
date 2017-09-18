@@ -1,0 +1,99 @@
+.service-content{
+	background-color: $brand-primary;
+	padding: 6.25em 0 0;
+}
+.service-item{
+	background-color: transparentize($black, 0.7);
+	padding: 3.125em 3.8125em;
+	margin: 0 0 1.5625em;
+	position: relative;
+	border-radius: 4px;
+	text-align: center;
+	display: block;
+	.service-icon{
+		color: lighten($brand-info, 12%);
+		margin-bottom: 1.875em;
+		.icon{
+				font-size: 95px;
+		}
+	}
+	.service-item-text{
+		-webkit-transition: all 1s ease-in-out 0s;
+		transition: all 1s ease-in-out 0s;
+		opacity: 1;
+		h2{
+			margin: 0 0 1.3225em;
+			font-weight: 300;
+			color: $white;
+		}
+		p{
+			font-family: $font-family-serif;
+			@include font(1.25em, 1.55);
+			color: $white;
+		}
+	}
+	&:hover{
+		text-decoration: none;
+	}
+	.service-item-points{
+		background-color: transparentize($black, 0.15);
+		-webkit-transition: all 1s ease-in-out 0s;
+		transition: all 1s ease-in-out 0s;
+		border-radius: 4px;
+		position: absolute;
+		text-align: center;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		left: 0;
+		top: 0;
+		ul{
+			-webkit-transform: translateY(-50%);
+			        transform: translateY(-50%);
+			position: relative;
+			top: 50%;
+			li{
+				color: lighten($brand-info, 12%);
+				@include font(1.5625em, 1.24);
+				margin-bottom: 0.76em;
+				display: block;
+				opacity:0;
+			}
+		}
+	}
+	&:hover{
+		.service-item-text{
+			-webkit-transition: all 0.3s ease-in-out 0s;
+					transition: all 0.3s ease-in-out 0s;
+			opacity: 0;
+		}
+		.service-item-points{
+			opacity: 1;
+		}
+		.service-item-points{
+			ul{
+				li{
+					-webkit-transition: all 1s ease-in-out 0s;
+					transition: all 1s ease-in-out 0s;
+					opacity: 1;
+					&:nth-of-type(1){
+						-webkit-transition-delay: 0.3s;
+						        transition-delay: 0.3s;
+					}
+					&:nth-of-type(2){
+						-webkit-transition-delay: 0.6s;
+						        transition-delay: 0.6s;
+					}
+					&:nth-of-type(3){
+						-webkit-transition-delay: 0.9s;
+						        transition-delay: 0.9s;
+					}
+					&:nth-of-type(4){
+						-webkit-transition-delay: 1.2s;
+						        transition-delay: 1.2s;
+					}
+				}
+			}
+		}
+	}
+}
