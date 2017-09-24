@@ -1,0 +1,35 @@
+.post{
+	@extend %clearfix;
+}
+.featured-post{
+	.post{
+		margin: 0 0 1.5625em;
+	}
+	.featured-image{
+		margin: 0 0 0.625em;
+	}
+	.entry-content{
+		.entry-title{
+			@include font(1em, 1.25, 700);
+			text-transform: capitalize;
+			margin: 0 0 1.0625em;
+		}
+		.category{
+			@include font(0.8125em, 1, 600);
+			text-transform: uppercase;
+			position: relative;
+			display: block;
+			float: right;
+			&:before{
+				background-color: $brand-danger;
+				position: absolute;
+				margin-right: 6px;
+				content: "";
+				height: 2px;
+				width: 25px;
+				right: 100%;
+				top: 6px;
+			}
+		}
+	}
+}
