@@ -173,7 +173,10 @@
 	}
 }
 .general-info{
-	padding: 6.25em 0 0;
+	padding: 3.125em 0 0;
+	@include media('>tablet'){
+		padding: 6.25em 0 0;
+	}
 	.list{
 		counter-reset: list-marker;
 		li{
@@ -201,13 +204,25 @@
 	}
 }
 .techologies-block{
-	padding: 6.25em 0 0;
+	margin-bottom: 3.125em;
+	padding-top: 3.125em;
+	@include media('>tablet'){
+		padding: 6.25em 0 0;
+		margin: 0 0 6.25em;
+	}
 	h2{
 		color: darken($brand-primary, 36%);
-		margin: 0 0 1.806em;
+		@include font(1.5625em, 1, 700);
+		text-transform: capitalize;
+		margin: 0 0 1em;
+		@include media('>s-phone'){
+			margin: 0 0 1.806em;
+			font-size: 1.9375em;
+		}
 	}
 }
 .technologies{
+	padding: 3.125em 0;
 	background: #fff;
 	ul{
 		@extend %clearfix;
@@ -215,8 +230,11 @@
 		li{
 			white-space: nowrap;
 			min-height: 200px;
-			width: 33.33%;
+			width: 50%;
 			float: left;
+			@include media('>s-phone'){
+				width: 33.33%
+			}
 			&:after{
 				vertical-align: middle;
 				display: inline-block;
@@ -231,5 +249,67 @@
 				max-width: 100px;
 			}
 		}
+	}
+}
+.other-services{
+	h2{
+		@include font(1.5625em, 1, 700);
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		margin: 0 0 1em;
+		@include media('>s-phone'){
+			margin-bottom: 1.322em;
+			font-size: 1.9375em;
+			line-height: 1.1;
+		}
+	}
+	margin-bottom: 1.5625em;
+	@include media('>s-phone'){
+		margin-bottom: 3.125em;
+	}
+	@include media('>tablet'){
+		margin-bottom: 4.6875em;
+	}
+}
+.other-service{
+	border: 1px solid transparentize($black, 0.9);
+	margin: 0 0 1.5625em;
+	text-align: center;
+	border-radius: 4px;
+	@include media('>tablet', '<=desktop'){
+		padding: 3.0625em 0.75em;
+	}
+	padding: 3.0625em;
+	.icon{
+		@include font(3.8125em, 1, normal);
+		color: $brand-primary;
+		margin: 0 0 0.639em;
+	}
+	h3{
+		@include font(1.25em, 1, 600);
+		text-transform: capitalize;
+		margin: 0 0 1.05em;
+	}
+	p{
+		margin-bottom: 1.07789em;
+	}
+	.btn-primary{
+		-webkit-transition: all 0.3s ease-in-out 0s;
+		transition: all 0.3s ease-in-out 0s;
+		background-color: transparent;
+		&:hover{
+			background-color: $brand-primary;
+			border-color: $brand-primary;
+			color: $white;
+		}
+	}
+	.btn{
+		@include font(0.8125em, 1.538em, 600);
+		text-transform: uppercase;
+		padding: 0.538em 2.769em;
+		color: $brand-primary;
+		border-radius: 50px;
+		letter-spacing: 1;
+		border-width: 2px;
 	}
 }
