@@ -1,7 +1,105 @@
+.section-hero{
+	padding: 6.25em 0;
+}
+.hero-content{
+	h1{
+		@include font(3.8125em,1, 400);
+		text-transform: uppercase;
+		margin: 0 0 0.278688em;
+	}
+	p{
+		font-family: $font-family-serif;
+		@include font(1.25em,1.55);
+	}
+}
 .post{
+	border-bottom: 1px dotted $brand-danger;
 	@extend %clearfix;
+	padding: 6.25em 0;
+	.featured-post &{
+		border-bottom: none;
+		padding: 0;
+	}
+	&:last-child{
+		border-bottom: none;
+	}
+	.entry-thumbnail{
+		margin: 0 0 1.5625em;
+		display: block;
+		&:hover img{
+			opacity: .8;
+		}
+		img{
+			-webkit-transition: all .3s ease-in-out;
+			transition: all .3s ease-in-out;
+			display: block;
+			height: auto;
+			width: 100%;
+		}
+	}
+	.entry-title{
+		text-transform: capitalize;
+		margin: 0 0 0.806em;
+		line-height: 1.612;
+		a{
+			-webkit-transition: all .3s ease-in-out;
+			transition: all .3s ease-in-out;
+			color: $black;
+			&:hover{
+				color: desaturate($brand-primary, 38%);
+				text-decoration: none;
+			}
+		}
+	}
+	.entry-meta{
+		@include font(0.8125em,1.538);
+		margin-bottom: 1.923em;
+		.entry-author{
+			@include display(inline-block,middle);
+			-webkit-transition: all .3s ease-in-out;
+			transition: all .3s ease-in-out;
+			margin: 0 1.5625em 0 0;
+			color: $black;
+			&:hover{
+				color: desaturate($brand-primary, 38%);
+				text-decoration: none;
+			}
+		}
+		.avatar{
+			margin: 0 0.8125em 0 0;
+			display: inline-block;
+			height: 50px;
+			width: 50px;
+		}
+		.entry-date{
+			display: inline-block;
+			margin: 0 10px 0 0;
+			&:after{
+				color: $brand-danger;
+				margin-left: 10px;
+				content: "|";
+			}
+		}
+	}
+	.entry-excerpt{
+		.more{
+			-webkit-transition: all .3s ease-in-out;
+			transition: all .3s ease-in-out;
+			@include display(inline-block, top);
+			text-transform: capitalize;
+			margin: 2.3125em 0 0;
+			font-weight: 700;
+			color: $black;
+			&:hover{
+				color: desaturate($brand-primary, 38%);
+				text-decoration: none;
+			}
+		}
+	}
 }
 .featured-post{
+	padding: 6.25em 0 4.6875em;
+	background-color: $black;
 	.post{
 		margin: 0 0 1.5625em;
 	}
@@ -9,19 +107,29 @@
 		margin: 0 0 0.625em;
 	}
 	.entry-content{
+		color: $white;
 		.entry-title{
 			@include font(1em, 1.25, 700);
 			text-transform: capitalize;
 			margin: 0 0 1.0625em;
+			a{
+				-webkit-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+				color: $white;
+				&:hover{
+					text-decoration: none;
+					opacity: 0.6;
+				}
+			}
 		}
-		.category{
+		.category-link{
 			@include font(0.8125em, 1, 600);
 			text-transform: uppercase;
 			position: relative;
 			display: block;
 			float: right;
 			&:before{
-				background-color: $brand-danger;
+				background-color: desaturate($brand-info, 7%);
 				position: absolute;
 				margin-right: 6px;
 				content: "";
@@ -29,6 +137,15 @@
 				width: 25px;
 				right: 100%;
 				top: 6px;
+			}
+			a{
+				-webkit-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+				color: $white;
+				&:hover{
+					text-decoration: none;
+					opacity: 0.6;
+				}
 			}
 		}
 	}

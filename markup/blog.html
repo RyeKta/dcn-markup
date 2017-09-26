@@ -6,7 +6,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700|Open+Sans:300,400,600,600i,700,800" rel="stylesheet"> 
 	<link media="all" rel="stylesheet" href="css/bootstrap.css">
 	<link media="all" rel="stylesheet" href="css/main.css">
-	<script src="js/bootstrap.min.js" defer></script>
 	<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/jquery.main.js" defer></script>
@@ -55,14 +54,47 @@
 		<section class="featured-post">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-2">
+					<div class="col-sm-3">
 						<article class="post">
 							<div class="featured-image">
 								<img src="https://placehold.it/400x400.jpg" alt="">
 							</div>
 							<div class="entry-content">
-								<h2 class="entry-title">Lorem ipsum dolor.</h2>
-								<span class="category">Web Design</span>
+								<h2 class="entry-title"><a href="#">Lorem ipsum dolor.</a></h2>
+								<span class="category-link"><a href="#">Web Design</a></span>
+							</div>
+						</article>
+					</div>
+					<div class="col-sm-3">
+						<article class="post">
+							<div class="featured-image">
+								<img src="https://placehold.it/400x400.jpg" alt="">
+							</div>
+							<div class="entry-content">
+								<h2 class="entry-title"><a href="#">Lorem ipsum dolor.</a></h2>
+								<span class="category-link"><a href="#">CSR</a></span>
+							</div>
+						</article>
+					</div>
+					<div class="col-sm-3">
+						<article class="post">
+							<div class="featured-image">
+								<img src="https://placehold.it/400x400.jpg" alt="">
+							</div>
+							<div class="entry-content">
+								<h2 class="entry-title"><a href="#">Lorem ipsum dolor.</a></h2>
+								<span class="category-link"><a href="#">Information</a></span>
+							</div>
+						</article>
+					</div>
+					<div class="col-sm-3">
+						<article class="post">
+							<div class="featured-image">
+								<img src="https://placehold.it/400x400.jpg" alt="">
+							</div>
+							<div class="entry-content">
+								<h2 class="entry-title"><a href="#">Lorem ipsum dolor.</a></h2>
+								<span class="category-link"><a href="#">Information</a>,<a href="#">csr</a></span>
 							</div>
 						</article>
 					</div>
@@ -70,6 +102,39 @@
 			</div>
 		</section>
 		<!-- ./Featured posts -->
+		<div id="two-columns" class="container">
+			<div class="row">
+				<div id="content" class="col-sm-8">
+					<article class="post">
+						<a href="#" class="entry-thumbnail"><img src="https://placehold.it/1600x800.jpg" alt=""></a>
+						<div class="row">
+							<div class="col-sm-9 col-sm-offset-3">
+								<header class="entry-header">
+									<h2 class="entry-title">
+										<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+									</h2>
+									<div class="entry-meta">
+										<a href="#" class="entry-author"><span class="avatar"><img src="https://placehold.it/500x500.jpg" alt="" class="img-circle"></span>
+											<strong>Author Name</strong></a>
+											<em class="entry-date">24 Aug 2017</em>
+											<strong><a href="#">Web Development</a></strong>
+										</div>
+									</header>
+									<div class="entry-excerpt">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestias, maiores culpa, error itaque omnis eius. Sed dolor, facilis! Corporis accusantium modi est animi dignissimos sint magnam in consectetur quos consequuntur recusandae ipsum temporibus tempore dolor corrupti, aliquid distinctio placeat.
+										</p>
+										<a href="#" class="more">Continue reading</a>
+									</div>
+								</div>
+							</div>
+					</article>
+				</div>
+				<div id="sidebar" class="com-sm-4">
+					sidebar
+				</div>
+			</div>
+		</div>
 	</main>
 	<!-- Footer of the page -->
 	<footer id="footer">
