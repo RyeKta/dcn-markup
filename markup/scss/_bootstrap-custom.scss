@@ -46,6 +46,15 @@ $btn-info-border:                $brand-info;
 $btn-warning-border:             $brand-warning;
 $btn-danger-border:              $brand-danger;
 
+/* Forms*/
+$input-bg: #fff;
+$input-color: #030611;
+$input-border: #938f09;
+$input-border-radius: 0;
+$input-color-placeholder: $input-color;
+$input-height-base: 39px;
+$input-border-focus: $black;
+$form-group-margin-bottom: 20px;
 /*== Navbar*/
 /* Basics of a navbar*/
 $navbar-height:                    auto;

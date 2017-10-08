@@ -54,7 +54,7 @@
 		<section class="featured-post">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-3">
+					<div class="col-xs-6 col-sm-3">
 						<article class="post">
 							<div class="featured-image">
 								<img src="https://placehold.it/400x400.jpg" alt="">
@@ -65,7 +65,7 @@
 							</div>
 						</article>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-xs-6 col-sm-3">
 						<article class="post">
 							<div class="featured-image">
 								<img src="https://placehold.it/400x400.jpg" alt="">
@@ -76,7 +76,7 @@
 							</div>
 						</article>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-xs-6 col-sm-3">
 						<article class="post">
 							<div class="featured-image">
 								<img src="https://placehold.it/400x400.jpg" alt="">
@@ -87,7 +87,7 @@
 							</div>
 						</article>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-xs-6 col-sm-3">
 						<article class="post">
 							<div class="featured-image">
 								<img src="https://placehold.it/400x400.jpg" alt="">
@@ -102,36 +102,76 @@
 			</div>
 		</section>
 		<!-- ./Featured posts -->
-		<div id="two-columns" class="container">
+		<div class="container">
 			<div class="row">
-				<div id="content" class="col-sm-8">
-					<article class="post">
-						<a href="#" class="entry-thumbnail"><img src="https://placehold.it/1600x800.jpg" alt=""></a>
-						<div class="row">
-							<div class="col-sm-9 col-sm-offset-3">
-								<header class="entry-header">
-									<h2 class="entry-title">
-										<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-									</h2>
-									<div class="entry-meta">
-										<a href="#" class="entry-author"><span class="avatar"><img src="https://placehold.it/500x500.jpg" alt="" class="img-circle"></span>
-											<strong>Author Name</strong></a>
-											<em class="entry-date">24 Aug 2017</em>
-											<strong><a href="#">Web Development</a></strong>
+				<div id="content" class="col-sm-offset-2 col-sm-8">
+					<section class="filter-bar">
+						<form action="" class="filter-form">
+							<h2>filter articles</h2>
+							<div class="row">
+								<div class="col-xs-7 col-sm-8">
+									<select class="form-control">
+										<option value="All categories">All categories</option>
+										<option value="Web development">Web Development</option>
+										<option value="CSR">CSR</option>
+									</select>
+								</div>
+								<div class="col-xs-5 col-sm-4">
+									<select class="form-control">
+										<option value="All Year">All year</option>
+										<option value="2017">2017</option>
+										<option value="2016">2016</option>
+										<option value="2015">2015</option>
+									</select>
+								</div>
+							</div>
+						</form>
+					</section>
+					<section class="posts-section">
+						<h2 class="sub-title">Latest articles from all categories in 2017</h2>
+						<article class="post">
+							<a href="#" class="entry-thumbnail"><img src="https://placehold.it/1600x800.jpg" alt=""></a>
+							<div class="row">
+								<div class="col-md-9 col-md-offset-3">
+									<header class="entry-header">
+										<h2 class="entry-title">
+											<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+										</h2>
+										<div class="entry-meta">
+											<a href="#" class="entry-author"><span class="avatar"><img src="https://placehold.it/500x500.jpg" alt="" class="img-circle"></span><strong>Author Name</strong></a><em class="entry-date">24 Aug 2017</em><strong><a href="#">Web Development</a></strong>
 										</div>
 									</header>
 									<div class="entry-excerpt">
 										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestias, maiores culpa, error itaque omnis eius. Sed dolor, facilis! Corporis accusantium modi est animi dignissimos sint magnam in consectetur quos consequuntur recusandae ipsum temporibus tempore dolor corrupti, aliquid distinctio placeat.
+											Lorem ipsum dolor sit amet, consectetur adipi<span style="color: red;">sicing elit. Impedit molestias,</span> maiores culpa, error itaque omnis eius. Sed dolor, facilis! Corporis accusantium modi est animi dignissimos sint magnam in consectetur quos consequuntur recusandae ipsum temporibus tempore dolor corrupti, aliquid distinctio placeat.
 										</p>
 										<a href="#" class="more">Continue reading</a>
 									</div>
 								</div>
 							</div>
-					</article>
-				</div>
-				<div id="sidebar" class="com-sm-4">
-					sidebar
+						</article>
+						<article class="post">
+							<a href="#" class="entry-thumbnail"><img src="https://placehold.it/1600x800.jpg" alt=""></a>
+							<div class="row">
+								<div class="col-md-9 col-md-offset-3">
+									<header class="entry-header">
+										<h2 class="entry-title">
+											<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+										</h2>
+										<div class="entry-meta">
+											<a href="#" class="entry-author"><span class="avatar"><img src="https://placehold.it/500x500.jpg" alt="" class="img-circle"></span><strong>Author Name</strong></a><em class="entry-date">24 Aug 2017</em><strong><a href="#">Web Development</a></strong>
+										</div>
+									</header>
+									<div class="entry-excerpt">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipi<span style="color: red;">sicing elit. Impedit molestias,</span> maiores culpa, error itaque omnis eius. Sed dolor, facilis! Corporis accusantium modi est animi dignissimos sint magnam in consectetur quos consequuntur recusandae ipsum temporibus tempore dolor corrupti, aliquid distinctio placeat.
+										</p>
+										<a href="#" class="more">Continue reading</a>
+									</div>
+								</div>
+							</div>
+						</article>
+					</section>
 				</div>
 			</div>
 		</div>

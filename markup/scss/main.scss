@@ -7,13 +7,16 @@ $breakpoints: (
    desktop: 991px,
    widescreen: 1300px
    );
-@import "bootstrap-custom";
-
-@import 'vendors/include-media';
-@import 'vendors/icomoon/icomoon';
+@import 'bootstrap-custom';
+@import 'vendors/bootstrap/variables';
+@import 'vendors/bootstrap/mixins';
 
 @import 'base/mixins';
 @import 'base/helpers';
+
+@import 'vendors/jcf';
+@import 'vendors/include-media';
+@import 'vendors/icomoon/icomoon';
 
 @import 'layout/header';
 @import 'layout/footer';
@@ -483,4 +486,9 @@ img{
          opacity: 0.8;
       }
    }
+}
+
+.jcf-select-form-control{
+   @include font(0.8125em,1.461);
+   padding: 0.692em 0.923em;
 }

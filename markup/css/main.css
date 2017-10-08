@@ -10,10 +10,593 @@
 /*** Unit-less `line-height` for use in components like buttons.*/
 /* 25/16*/
 /*** By default, this inherits from the `<body>`.*/
+/* Forms*/
 /*== Navbar*/
 /* Basics of a navbar*/
 /* Navbar links*/
 /* Navbar toggle*/
+/**/
+/* Variables*/
+/* --------------------------------------------------*/
+/*== Colors*/
+/**/
+/*## Gray and brand colors for use across Bootstrap.*/
+/* #222*/
+/* #333*/
+/* #555*/
+/* #777*/
+/* #eee*/
+/* #337ab7*/
+/*== Scaffolding*/
+/**/
+/*## Settings for some of the most global styles.*/
+/*** Background color for `<body>`.*/
+/*** Global text color on `<body>`.*/
+/*** Global textual link color.*/
+/*** Link hover color set via `darken()` function.*/
+/*** Link hover decoration.*/
+/*== Typography*/
+/**/
+/*## Font, line-height, and color for body text, headings, and more.*/
+/*** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.*/
+/* ~18px*/
+/* ~12px*/
+/* ~36px*/
+/* ~30px*/
+/* ~24px*/
+/* ~18px*/
+/* ~12px*/
+/*** Unit-less `line-height` for use in components like buttons.*/
+/* 20/14*/
+/*** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.*/
+/* ~20px*/
+/*** By default, this inherits from the `<body>`.*/
+/*== Iconography*/
+/**/
+/*## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.*/
+/*** Load fonts from this directory.*/
+/* [converter] If $bootstrap-sass-asset-helper if used, provide path relative to the assets load path.*/
+/* [converter] This is because some asset helpers, such as Sprockets, do not work with file-relative paths.*/
+/*** File name for all font files.*/
+/*** Element ID within SVG icon file.*/
+/*== Components*/
+/**/
+/*## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).*/
+/* extra decimals for Win 8.1 Chrome*/
+/*** Global color for active items (e.g., navs or dropdowns).*/
+/*** Global background color for active items (e.g., navs or dropdowns).*/
+/*** Width of the `border` for generating carets that indicate dropdowns.*/
+/*** Carets increase slightly in size for larger components.*/
+/*== Tables*/
+/**/
+/*## Customizes the `.table` component with basic values, each used across all table variations.*/
+/*** Padding for `<th>`s and `<td>`s.*/
+/*** Padding for cells in `.table-condensed`.*/
+/*** Default background color used for all tables.*/
+/*** Background color used for `.table-striped`.*/
+/*** Background color used for `.table-hover`.*/
+/*** Border color for table and cell borders.*/
+/*== Buttons*/
+/**/
+/*## For each of Bootstrap's buttons, define text, background and border color.*/
+/* Allows for customizing button radius independently from global border radius*/
+/*== Forms*/
+/**/
+/*##*/
+/*** `<input>` background color*/
+/*** `<input disabled>` background color*/
+/*** Text color for `<input>`s*/
+/*** `<input>` border color*/
+/* TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4*/
+/*** Default `.form-control` border radius*/
+/* This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.*/
+/*** Large `.form-control` border radius*/
+/*** Small `.form-control` border radius*/
+/*** Border color for inputs on focus*/
+/*** Placeholder text color*/
+/*** Default `.form-control` height*/
+/*** Large `.form-control` height*/
+/*** Small `.form-control` height*/
+/*** `.form-group` margin*/
+/*** Background color for textual input addons*/
+/*** Border color for textual input addons*/
+/*** Disabled cursor for form controls and buttons.*/
+/*== Dropdowns*/
+/**/
+/*## Dropdown menu container and contents.*/
+/*** Background for the dropdown menu.*/
+/*** Dropdown menu `border-color`.*/
+/*** Dropdown menu `border-color` **for IE8**.*/
+/*** Divider color for between dropdown items.*/
+/*** Dropdown link text color.*/
+/*** Hover color for dropdown links.*/
+/*** Hover background for dropdown links.*/
+/*** Active dropdown menu item text color.*/
+/*** Active dropdown menu item background color.*/
+/*** Disabled dropdown menu item background color.*/
+/*** Text color for headers within dropdown menus.*/
+/*** Deprecated `$dropdown-caret-color` as of v3.1.0*/
+/*-- Z-index master list*/
+/**/
+/* Warning: Avoid customizing these values. They're used for a bird's eye view*/
+/* of components dependent on the z-axis and are designed to all work together.*/
+/**/
+/* Note: These variables are not generated into the Customizer.*/
+/*== Media queries breakpoints*/
+/**/
+/*## Define the breakpoints at which your layout will change, adapting to different screen sizes.*/
+/* Extra small screen / phone*/
+/*** Deprecated `$screen-xs` as of v3.0.1*/
+/*** Deprecated `$screen-xs-min` as of v3.2.0*/
+/*** Deprecated `$screen-phone` as of v3.0.1*/
+/* Small screen / tablet*/
+/*** Deprecated `$screen-sm` as of v3.0.1*/
+/*** Deprecated `$screen-tablet` as of v3.0.1*/
+/* Medium screen / desktop*/
+/*** Deprecated `$screen-md` as of v3.0.1*/
+/*** Deprecated `$screen-desktop` as of v3.0.1*/
+/* Large screen / wide desktop*/
+/*** Deprecated `$screen-lg` as of v3.0.1*/
+/*** Deprecated `$screen-lg-desktop` as of v3.0.1*/
+/* So media queries don't overlap when required, provide a maximum*/
+/*== Grid system*/
+/**/
+/*## Define your custom responsive grid.*/
+/*** Number of columns in the grid.*/
+/*** Padding between columns. Gets divided in half for the left and right.*/
+/* Navbar collapse*/
+/*** Point at which the navbar becomes uncollapsed.*/
+/*** Point at which the navbar begins collapsing.*/
+/*== Container sizes*/
+/**/
+/*## Define the maximum width of `.container` for different screen sizes.*/
+/* Small screen / tablet*/
+/*** For `$screen-sm-min` and up.*/
+/* Medium screen / desktop*/
+/*** For `$screen-md-min` and up.*/
+/* Large screen / wide desktop*/
+/*** For `$screen-lg-min` and up.*/
+/*== Navbar*/
+/**/
+/*##*/
+/* Basics of a navbar*/
+/* Navbar links*/
+/* Navbar brand label*/
+/* Navbar toggle*/
+/*=== Inverted navbar*/
+/* Reset inverted navbar basics*/
+/* Inverted navbar links*/
+/* Inverted navbar brand label*/
+/* Inverted navbar toggle*/
+/*== Navs*/
+/**/
+/*##*/
+/*=== Shared nav styles*/
+/*== Tabs*/
+/*== Pills*/
+/*== Pagination*/
+/**/
+/*##*/
+/*== Pager*/
+/**/
+/*##*/
+/*== Jumbotron*/
+/**/
+/*##*/
+/*== Form states and alerts*/
+/**/
+/*## Define colors for form feedback states and, by default, alerts.*/
+/*== Tooltips*/
+/**/
+/*##*/
+/*** Tooltip max width*/
+/*** Tooltip text color*/
+/*** Tooltip background color*/
+/*** Tooltip arrow width*/
+/*** Tooltip arrow color*/
+/*== Popovers*/
+/**/
+/*##*/
+/*** Popover body background color*/
+/*** Popover maximum width*/
+/*** Popover border color*/
+/*** Popover fallback border color*/
+/*** Popover title background color*/
+/*** Popover arrow width*/
+/*** Popover arrow color*/
+/*** Popover outer arrow width*/
+/*** Popover outer arrow color*/
+/*** Popover outer arrow fallback color*/
+/*== Labels*/
+/**/
+/*##*/
+/*** Default label background color*/
+/*** Primary label background color*/
+/*** Success label background color*/
+/*** Info label background color*/
+/*** Warning label background color*/
+/*** Danger label background color*/
+/*** Default label text color*/
+/*** Default text color of a linked label*/
+/*== Modals*/
+/**/
+/*##*/
+/*** Padding applied to the modal body*/
+/*** Padding applied to the modal title*/
+/*** Modal title line-height*/
+/*** Background color of modal content area*/
+/*** Modal content border color*/
+/*** Modal content border color **for IE8***/
+/*** Modal backdrop background color*/
+/*** Modal backdrop opacity*/
+/*** Modal header border color*/
+/*** Modal footer border color*/
+/*== Alerts*/
+/**/
+/*## Define alert colors, border radius, and padding.*/
+/*== Progress bars*/
+/**/
+/*##*/
+/*** Background color of the whole progress component*/
+/*** Progress bar text color*/
+/*** Variable for setting rounded corners on progress bar.*/
+/*** Default progress bar color*/
+/*** Success progress bar color*/
+/*** Warning progress bar color*/
+/*** Danger progress bar color*/
+/*** Info progress bar color*/
+/*== List group*/
+/**/
+/*##*/
+/*** Background color on `.list-group-item`*/
+/*** `.list-group-item` border color*/
+/*** List group border radius*/
+/*** Background color of single list items on hover*/
+/*** Text color of active list items*/
+/*** Background color of active list items*/
+/*** Border color of active list elements*/
+/*** Text color for content within active list items*/
+/*** Text color of disabled list items*/
+/*** Background color of disabled list items*/
+/*** Text color for content within disabled list items*/
+/*== Panels*/
+/**/
+/*##*/
+/*** Border color for elements within panels*/
+/*== Thumbnails*/
+/**/
+/*##*/
+/*** Padding around the thumbnail image*/
+/*** Thumbnail background color*/
+/*** Thumbnail border color*/
+/*** Thumbnail border radius*/
+/*** Custom text color for thumbnail captions*/
+/*** Padding around the thumbnail caption*/
+/*== Wells*/
+/**/
+/*##*/
+/*== Badges*/
+/**/
+/*##*/
+/*** Linked badge text color on hover*/
+/*** Badge text color in active nav link*/
+/*** Badge background color in active nav link*/
+/*== Breadcrumbs*/
+/**/
+/*##*/
+/*** Breadcrumb background color*/
+/*** Breadcrumb text color*/
+/*** Text color of current page in the breadcrumb*/
+/*** Textual separator for between breadcrumb elements*/
+/*== Carousel*/
+/**/
+/*##*/
+/*== Close*/
+/**/
+/*##*/
+/*== Code*/
+/**/
+/*##*/
+/*== Type*/
+/**/
+/*##*/
+/*** Horizontal offset for forms and lists.*/
+/*** Text muted color*/
+/*** Abbreviations and acronyms border color*/
+/*** Headings small color*/
+/*** Blockquote small color*/
+/*** Blockquote font size*/
+/*** Blockquote border color*/
+/*** Page header border color*/
+/*** Width of horizontal description list titles*/
+/*** Point at which .dl-horizontal becomes horizontal*/
+/*** Horizontal line color.*/
+/* Framework grid generation*/
+/**/
+/* Used only by Bootstrap to generate the correct number of grid classes given*/
+/* any value of `$grid-columns`.*/
+/* [converter] This is defined recursively in LESS, but Sass supports real loops*/
+/* [converter] This is defined recursively in LESS, but Sass supports real loops*/
+/* [converter] This is defined recursively in LESS, but Sass supports real loops*/
+/* Create grid for specific class*/
+.data-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.clearfix:after, .social-network ul:after, .clients-list .clients-logo:after, .technologies ul:after, .post:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  /* 1 */
+  text-overflow: ellipsis;
+  /* 2 */
+  overflow: hidden;
+}
+
+/* custom checkbox styles */
+.jcf-checkbox {
+  width: 17px;
+  height: 17px;
+  border-radius: 2px;
+  border: 1px solid #dce0e0;
+  text-align: center;
+  float: left;
+  position: relative;
+  cursor: default;
+  margin: -2px 9px 0 0;
+  background: #fff;
+}
+
+.jcf-checkbox:before {
+  display: none;
+}
+
+.jcf-checkbox.jcf-checked:before {
+  content: '\f00c';
+  display: block;
+  font-family: FontAwesome;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  -webkit-font-kerning: auto;
+  font-kerning: auto;
+  -webkit-font-language-override: normal;
+  font-language-override: normal;
+  font-size: inherit;
+  font-size-adjust: none;
+  font-stretch: normal;
+  font-style: normal;
+  font-synthesis: weight style;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 14px;
+  text-rendering: auto;
+  color: #0a8446;
+}
+
+.jcf-checkbox input[type="checkbox"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+}
+
+/* custom radio styles */
+.jcf-radio {
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  background: #fff;
+  border: 1px solid #777;
+  border-radius: 9px;
+  margin: 0 3px 0 0;
+  height: 16px;
+  width: 16px;
+}
+
+.jcf-radio span {
+  display: none;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  background: #777;
+  border-radius: 100%;
+}
+
+.jcf-radio input[type="radio"] {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+}
+
+.jcf-radio.jcf-checked span {
+  display: block;
+}
+
+/* custom select styles */
+.jcf-select {
+  display: block;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  height: 39px;
+  position: relative;
+  color: #030611;
+  background: #fff;
+  border: 1px solid #938f09;
+  border-radius: 0;
+  -webkit-transition: border-color ease-in-out .15s;
+  transition: border-color ease-in-out .15s;
+}
+
+.jcf-select .jcf-select-opener {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  top: 50%;
+  margin-top: -2px;
+  height: 0;
+  width: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #030611;
+}
+
+.jcf-select.jcf-focus {
+  border-color: #030611;
+  outline: 0;
+}
+
+.jcf-select.jcf-focus .jcf-select-opener {
+  height: 0;
+  width: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #030611;
+}
+
+.jcf-select select {
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.jcf-select .jcf-select-text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: default;
+  display: block;
+  font-size: 13px;
+  margin: 0 30px 0 0;
+}
+
+body > .jcf-select-drop {
+  position: absolute;
+  margin: -1px 0 0;
+  z-index: 9999;
+  padding: 0 1px 0 0;
+}
+
+body > .jcf-select-drop.jcf-drop-flipped {
+  margin: 1px 0 0;
+}
+
+.jcf-select .jcf-select-drop {
+  position: absolute;
+  margin-top: 0px;
+  z-index: 9999;
+  top: 100%;
+  left: -1px;
+  right: -1px;
+}
+
+.jcf-select .jcf-drop-flipped {
+  bottom: 100%;
+  top: auto;
+}
+
+.jcf-select-drop .jcf-select-drop-content {
+  border: 1px solid #030611;
+}
+
+/* multiple select styles */
+.jcf-list-box {
+  overflow: hidden;
+  display: inline-block;
+  border: 1px solid #b8c3c9;
+  min-width: 200px;
+  margin: 0 15px;
+}
+
+/* select options styles */
+.jcf-list {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  background: #fff;
+  line-height: 14px;
+  font-size: 12px;
+  width: 100%;
+}
+
+.jcf-list .jcf-list-content {
+  vertical-align: top;
+  display: inline-block;
+  overflow: auto;
+  width: 100%;
+}
+
+.jcf-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.jcf-list ul li {
+  overflow: hidden;
+  display: block;
+}
+
+.jcf-list .jcf-overflow {
+  overflow: auto;
+}
+
+.jcf-list .jcf-option {
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: default;
+  display: block;
+  padding: 3px 9px;
+  color: #656565;
+  height: 1%;
+}
+
+.jcf-list .jcf-disabled {
+  background: #fff !important;
+  color: #aaa !important;
+}
+
+.jcf-select-drop .jcf-hover,
+.jcf-list-box .jcf-selected {
+  background: #7481b4;
+  color: #fff;
+}
+
+.jcf-list .jcf-optgroup-caption {
+  white-space: nowrap;
+  font-weight: bold;
+  display: block;
+  padding: 5px 9px;
+  cursor: default;
+  color: #000;
+}
+
+.jcf-list .jcf-optgroup .jcf-option {
+  padding-left: 30px;
+}
+
+/* common custom form elements styles */
+.jcf-disabled {
+  background: #ddd !important;
+}
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?rsmgoe");
@@ -74,26 +657,6 @@
 
 .icon-quote-right:before {
   content: "\f10e";
-}
-
-.data-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.clearfix:after, .social-network ul:after, .clients-list .clients-logo:after, .technologies ul:after, .post:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.ellipsis {
-  white-space: nowrap;
-  /* 1 */
-  text-overflow: ellipsis;
-  /* 2 */
-  overflow: hidden;
 }
 
 #nav {
@@ -1299,6 +1862,10 @@
   padding: 6.25em 0;
 }
 
+.post:first-of-type {
+  padding-top: 0;
+}
+
 .featured-post .post {
   border-bottom: none;
   padding: 0;
@@ -1331,6 +1898,13 @@
   line-height: 1.612;
 }
 
+@media (max-width: 767px) {
+  .post .entry-title {
+    font-size: 1.5625em;
+    line-height: 1.24;
+  }
+}
+
 .post .entry-title a {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -1350,17 +1924,24 @@
 }
 
 .post .entry-meta .entry-author {
-  display: inline-block;
-  vertical-align: middle;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  margin: 0 1.5625em 0 0;
+  margin: 0 0 1em;
+  display: block;
   color: #030611;
 }
 
 .post .entry-meta .entry-author:hover {
   color: #7481b4;
   text-decoration: none;
+}
+
+@media (min-width: 480px) {
+  .post .entry-meta .entry-author {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 1.5625em 0 0;
+  }
 }
 
 .post .entry-meta .avatar {
@@ -1415,8 +1996,8 @@
 }
 
 .featured-post .entry-content .entry-title {
-  font-size: 1em;
-  line-height: 1.25;
+  font-size: 0.8125em;
+  line-height: 1.538;
   font-weight: 700;
   text-transform: capitalize;
   margin: 0 0 1.0625em;
@@ -1433,8 +2014,15 @@
   opacity: 0.6;
 }
 
+@media (min-width: 640px) {
+  .featured-post .entry-content .entry-title {
+    line-height: 1.25;
+    font-size: 1em;
+  }
+}
+
 .featured-post .entry-content .category-link {
-  font-size: 0.8125em;
+  font-size: 0.625em;
   line-height: 1;
   font-weight: 600;
   text-transform: uppercase;
@@ -1463,6 +2051,36 @@
 .featured-post .entry-content .category-link a:hover {
   text-decoration: none;
   opacity: 0.6;
+}
+
+@media (min-width: 640px) {
+  .featured-post .entry-content .category-link {
+    font-size: 0.8125em;
+  }
+}
+
+.filter-bar {
+  padding: 3.125em 0;
+}
+
+.filter-bar h2 {
+  font-size: 1.25em;
+  line-height: 1.55;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 0.95em;
+}
+
+.filter-bar .filter-form {
+  margin: 0 0 0.6875em;
+}
+
+.posts-section .sub-title {
+  font-size: 1.25em;
+  line-height: 1.55;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 0.95em;
 }
 
 img {
@@ -2057,4 +2675,11 @@ img {
 
 .help-section .more:hover {
   opacity: 0.8;
+}
+
+.jcf-select-form-control {
+  font-size: 0.8125em;
+  line-height: 1.461;
+  font-weight: normal;
+  padding: 0.692em 0.923em;
 }

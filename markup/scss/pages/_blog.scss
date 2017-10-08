@@ -16,6 +16,9 @@
 	border-bottom: 1px dotted $brand-danger;
 	@extend %clearfix;
 	padding: 6.25em 0;
+	&:first-of-type{
+		padding-top: 0;
+	}
 	.featured-post &{
 		border-bottom: none;
 		padding: 0;
@@ -38,6 +41,10 @@
 		}
 	}
 	.entry-title{
+		@include media('<=tablet'){
+			font-size: 1.5625em;
+			line-height: 1.24;
+		}
 		text-transform: capitalize;
 		margin: 0 0 0.806em;
 		line-height: 1.612;
@@ -55,14 +62,18 @@
 		@include font(0.8125em,1.538);
 		margin-bottom: 1.923em;
 		.entry-author{
-			@include display(inline-block,middle);
 			-webkit-transition: all .3s ease-in-out;
 			transition: all .3s ease-in-out;
-			margin: 0 1.5625em 0 0;
+			margin: 0 0 1em;
+			display: block;
 			color: $black;
 			&:hover{
 				color: desaturate($brand-primary, 38%);
 				text-decoration: none;
+			}
+			@include media('>=phone'){
+				@include display(inline-block,middle);
+				margin: 0 1.5625em 0 0;
 			}
 		}
 		.avatar{
@@ -109,7 +120,7 @@
 	.entry-content{
 		color: $white;
 		.entry-title{
-			@include font(1em, 1.25, 700);
+			@include font(0.8125em,1.538,700);
 			text-transform: capitalize;
 			margin: 0 0 1.0625em;
 			a{
@@ -121,9 +132,13 @@
 					opacity: 0.6;
 				}
 			}
+			@include media('>s-phone'){
+				line-height: 1.25;
+				font-size: 1em;
+			}
 		}
 		.category-link{
-			@include font(0.8125em, 1, 600);
+			@include font(0.625em, 1, 600);
 			text-transform: uppercase;
 			position: relative;
 			display: block;
@@ -147,6 +162,27 @@
 					opacity: 0.6;
 				}
 			}
+			@include media('>s-phone'){
+				font-size: 0.8125em;
+			}
 		}
+	}
+}
+.filter-bar{
+	padding: 3.125em 0;
+	h2{
+		@include font(1.25em,1.55,700);
+		text-transform: uppercase;
+		margin: 0 0 0.95em;
+	}
+	.filter-form{
+		margin: 0 0 0.6875em;
+	}
+}
+.posts-section{
+	.sub-title{
+		@include font(1.25em,1.55,700);
+		text-transform: uppercase;
+		margin: 0 0 0.95em;
 	}
 }
