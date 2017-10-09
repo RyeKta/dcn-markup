@@ -3,9 +3,12 @@
 }
 .hero-content{
 	h1{
-		@include font(3.8125em,1, 400);
+		@include font(2.4375em,1, 400);
 		text-transform: uppercase;
 		margin: 0 0 0.278688em;
+		@include media('>s-phone'){
+			font-size: 3.8125em;
+		}
 	}
 	p{
 		font-family: $font-family-serif;
@@ -15,16 +18,16 @@
 .post{
 	border-bottom: 1px dotted $brand-danger;
 	@extend %clearfix;
-	padding: 6.25em 0;
+	padding: 3.125em 0;
+	@include media('>desktop'){
+		padding: 6.25em 0;
+	}
 	&:first-of-type{
 		padding-top: 0;
 	}
 	.featured-post &{
 		border-bottom: none;
 		padding: 0;
-	}
-	&:last-child{
-		border-bottom: none;
 	}
 	.entry-thumbnail{
 		margin: 0 0 1.5625em;
@@ -169,11 +172,18 @@
 	}
 }
 .filter-bar{
-	padding: 3.125em 0;
+	padding: 1.5625em 0;
+	@include media('>s-phone'){
+		padding: 3.125em 0;
+	}
 	h2{
-		@include font(1.25em,1.55,700);
+		@include font(0.8125em,1.5384,700);
 		text-transform: uppercase;
 		margin: 0 0 0.95em;
+		@include media('>tablet'){
+			line-height: 1.5625;
+			font-size: 1em;
+		}
 	}
 	.filter-form{
 		margin: 0 0 0.6875em;
@@ -181,8 +191,18 @@
 }
 .posts-section{
 	.sub-title{
-		@include font(1.25em,1.55,700);
+		@include font(0.8125em,1.5384,700);
 		text-transform: uppercase;
 		margin: 0 0 0.95em;
+		@include media('>tablet'){
+			line-height: 1.5625;
+			font-size: 1em;
+		}
+	}
+}
+.sect-pagination{
+	padding: 1.5625em 0;
+	@include media('>desktop'){
+		padding: 4.6875em 0;
 	}
 }
