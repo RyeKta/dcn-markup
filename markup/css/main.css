@@ -319,7 +319,9 @@
 /* [converter] This is defined recursively in LESS, but Sass supports real loops*/
 /* [converter] This is defined recursively in LESS, but Sass supports real loops*/
 /* Create grid for specific class*/
-.data-list {
+.single-article ul,
+.single-article .unordered-list, .single-article ol,
+.single-article .ordered-list, .data-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -599,8 +601,8 @@ body > .jcf-select-drop.jcf-drop-flipped {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon/icomoon.eot?rsmgoe");
-  src: url("../fonts/icomoon/icomoon.eot?rsmgoe#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?rsmgoe") format("truetype"), url("../fonts/icomoon/icomoon.woff?rsmgoe") format("woff"), url("../fonts/icomoon/icomoon.svg?rsmgoe#icomoon") format("svg");
+  src: url("../fonts/icomoon/icomoon.eot?74i67o");
+  src: url("../fonts/icomoon/icomoon.eot?74i67o#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?74i67o") format("truetype"), url("../fonts/icomoon/icomoon.woff?74i67o") format("woff"), url("../fonts/icomoon/icomoon.svg?74i67o#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -621,6 +623,10 @@ body > .jcf-select-drop.jcf-drop-flipped {
 
 .icon-envelope-o:before {
   content: "\f003";
+}
+
+.icon-calendar:before {
+  content: "\f073";
 }
 
 .icon-phone:before {
@@ -657,6 +663,14 @@ body > .jcf-select-drop.jcf-drop-flipped {
 
 .icon-quote-right:before {
   content: "\f10e";
+}
+
+.icon-mail-reply-all:before {
+  content: "\f122";
+}
+
+.icon-reply-all:before {
+  content: "\f122";
 }
 
 #nav {
@@ -2119,6 +2133,127 @@ body > .jcf-select-drop.jcf-drop-flipped {
   .sect-pagination {
     padding: 4.6875em 0;
   }
+}
+
+/* Single article*/
+.single-article-header {
+  background-color: #4b68dd;
+  padding: 3.125em 0;
+  color: #f7f8fd;
+}
+
+.single-article-header .top-section {
+  margin: 0 0 0.3125em;
+  display: block;
+}
+
+.single-article-header .link {
+  color: #b4b14e;
+  font-size: 0.8125em;
+  line-height: 1.5384;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.single-article-header .link .icon {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.single-article-header h1 {
+  font-size: 1.25em;
+  line-height: 1.55;
+  font-weight: 600;
+  margin: 0 0 0.95em;
+  color: #fff;
+}
+
+.single-article-header .entry-meta {
+  font-size: 0.8125em;
+  line-height: 1.5384;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.single-article-header .entry-meta .entry-date {
+  font-style: normal;
+}
+
+.single-article-header .entry-meta .bull {
+  margin: 0 0.5384em;
+  font-weight: 700;
+}
+
+#two-columns {
+  padding-bottom: 4.6875em;
+  padding-top: 3.125em;
+}
+
+.single-article .img-right {
+  margin-bottom: 1.5625em;
+  margin-left: 1.9375em;
+}
+
+.single-article a {
+  font-weight: 600;
+}
+
+.single-article h2,
+.single-article .sub-head {
+  color: #556ed3;
+  font-size: 1.25em;
+  line-height: 1.25;
+  font-weight: 700;
+  margin: 0 0 0.65em;
+}
+
+.single-article ul,
+.single-article .unordered-list {
+  padding: 0.8125em 0 1.5625em;
+}
+
+.single-article ul li,
+.single-article .unordered-list li {
+  margin-bottom: 0.8125em;
+  padding-left: 1.5625em;
+  position: relative;
+}
+
+.single-article ul li:before,
+.single-article .unordered-list li:before {
+  background-color: #030611;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  content: '';
+  top: 13px;
+  left: 0;
+}
+
+.single-article ol,
+.single-article .ordered-list {
+  padding: 0.8125em 0 1.5625em;
+  counter-reset: item;
+}
+
+.single-article ol li,
+.single-article .ordered-list li {
+  margin-bottom: 0.8125em;
+  padding-left: 1.5625em;
+  position: relative;
+}
+
+.single-article ol li:before,
+.single-article .ordered-list li:before {
+  font-size: 0.8125em;
+  line-height: 1.5384;
+  font-weight: 700;
+  content: counter(item);
+  counter-increment: item;
+  position: absolute;
+  color: #030611;
+  top: 3px;
+  left: 0;
 }
 
 img {
