@@ -321,7 +321,7 @@
 /* Create grid for specific class*/
 .single-article ul,
 .single-article .unordered-list, .single-article ol,
-.single-article .ordered-list, .data-list {
+.single-article .ordered-list, .social-link, .data-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -2254,6 +2254,128 @@ body > .jcf-select-drop.jcf-drop-flipped {
   color: #030611;
   top: 3px;
   left: 0;
+}
+
+#sidebar h2 {
+  color: #556ed3;
+  font-size: 0.8125em;
+  line-height: 1.5384;
+  font-weight: 700;
+  margin: 0 0 1.1538em;
+}
+
+.social-wrap {
+  margin-bottom: 2.1875em;
+}
+
+.social-wrap h2 {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .social-wrap h2 {
+    text-align: right;
+  }
+}
+
+.social-link {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .social-link {
+    text-align: right;
+  }
+}
+
+.social-link li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0.375em 0.6875em 0;
+}
+
+.social-link .circle span {
+  font-size: 1.25em;
+  line-height: 1.95;
+  font-weight: normal;
+  background-color: #3b5998;
+  display: inline-block;
+  width: 39px;
+  height: 39px;
+  text-align: center;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.social-link .circle:hover {
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
+  opacity: 0.8;
+}
+
+.social-link .circle.twitter span {
+  background-color: #00acdc;
+}
+
+.recent-block {
+  margin-bottom: 1.5625em;
+}
+
+@media (max-width: 767px) {
+  .recent-block h2 {
+    text-align: left;
+  }
+}
+
+.recent-post {
+  border-bottom: 1px dashed #e14111;
+  padding: 0.78125em 0 1.5em;
+}
+
+.recent-post:first-of-type {
+  padding-top: 0;
+}
+
+.recent-post h3 {
+  font-size: 0.8125em;
+  line-height: 1.28205;
+  font-weight: 700;
+  overflow: hidden;
+  line-height: 16.6667px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  max-height: 50.0001px;
+  /* fallback */
+  -webkit-line-clamp: 3;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+  margin-top: 0;
+}
+
+.recent-post h3 a {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  color: inherit;
+}
+
+.recent-post h3 a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.recent-post .entry-date {
+  color: #8f8e73;
+  font-size: 0.8125em;
+  line-height: 1.5384;
+  font-weight: normal;
+  text-transform: capitalize;
+  font-style: normal;
+}
+
+.recent-post .entry-date .icon {
+  display: inline-block;
+  margin-right: 1em;
 }
 
 img {

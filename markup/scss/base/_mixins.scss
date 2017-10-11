@@ -258,3 +258,12 @@ $animation-speed: .3s !default;
   vertical-align: $v-align;
 }
 
+@mixin line-clamp ($lineheight, $maxlines) {
+  overflow: hidden;
+  line-height: $lineheight;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  max-height: $lineheight * $maxlines;/* fallback */
+  -webkit-line-clamp: $maxlines; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
