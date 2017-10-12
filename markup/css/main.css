@@ -673,6 +673,29 @@ body > .jcf-select-drop.jcf-drop-flipped {
   content: "\f122";
 }
 
+.affix {
+  width: 100%;
+  z-index: 11;
+}
+
+.affix .navbar-default {
+  background-color: #030611;
+}
+
+@media (min-width: 768px) {
+  .affix .navbar-default .navbar-nav > li > a {
+    color: #f7f8fd;
+  }
+}
+
+.affix .navbar-default .navbar-toggle .icon-bar {
+  background-color: #f7f8fd;
+}
+
+.affix .navbar-default .navbar-toggle:hover, .affix .navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
 #nav {
   position: relative;
 }
@@ -765,7 +788,6 @@ body > .jcf-select-drop.jcf-drop-flipped {
 #main-nav {
   -webkit-box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(0, 0, 0, 0.1) inset;
-  background-color: #f7f8fd;
   position: absolute;
   z-index: 999;
   width: 100%;
@@ -780,6 +802,12 @@ body > .jcf-select-drop.jcf-drop-flipped {
     -webkit-box-shadow: none;
     box-shadow: none;
     width: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  #main-nav {
+    background-color: #f7f8fd;
   }
 }
 
@@ -1484,12 +1512,18 @@ body > .jcf-select-drop.jcf-drop-flipped {
 
 .service-item {
   background-color: rgba(3, 6, 17, 0.3);
-  padding: 3.125em 3.8125em;
   margin: 0 0 1.5625em;
   position: relative;
   border-radius: 4px;
   text-align: center;
+  padding: 1.9375em;
   display: block;
+}
+
+@media (min-width: 480px) {
+  .service-item {
+    padding: 3.125em 3.8125em;
+  }
 }
 
 .service-item .service-icon {
@@ -1513,12 +1547,24 @@ body > .jcf-select-drop.jcf-drop-flipped {
   color: #f7f8fd;
 }
 
+@media (max-width: 639px) {
+  .service-item .service-item-text h2 {
+    font-size: 1.5625em;
+  }
+}
+
 .service-item .service-item-text p {
   font-family: Lora, "Times New Roman", Times, serif;
   font-size: 1.25em;
   line-height: 1.55;
   font-weight: normal;
   color: #f7f8fd;
+}
+
+@media (max-width: 639px) {
+  .service-item .service-item-text p {
+    font-size: 1em;
+  }
 }
 
 .service-item:hover {
@@ -1915,6 +1961,15 @@ body > .jcf-select-drop.jcf-drop-flipped {
 }
 
 .post .entry-title {
+  overflow: hidden;
+  line-height: 50px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  max-height: 100px;
+  /* fallback */
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
   text-transform: capitalize;
   margin: 0 0 0.806em;
   line-height: 1.612;
@@ -1922,6 +1977,15 @@ body > .jcf-select-drop.jcf-drop-flipped {
 
 @media (max-width: 767px) {
   .post .entry-title {
+    overflow: hidden;
+    line-height: 31px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    max-height: 62px;
+    /* fallback */
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
     font-size: 1.5625em;
     line-height: 1.24;
   }
@@ -1984,6 +2048,18 @@ body > .jcf-select-drop.jcf-drop-flipped {
   content: "|";
 }
 
+.post .entry-excerpt p {
+  overflow: hidden;
+  line-height: 25px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  max-height: 125px;
+  /* fallback */
+  -webkit-line-clamp: 5;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
 .post .entry-excerpt .more {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -2021,6 +2097,15 @@ body > .jcf-select-drop.jcf-drop-flipped {
   font-size: 0.8125em;
   line-height: 1.538;
   font-weight: 700;
+  overflow: hidden;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  max-height: 20px;
+  /* fallback */
+  -webkit-line-clamp: 1;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
   text-transform: capitalize;
   margin: 0 0 1.0625em;
 }

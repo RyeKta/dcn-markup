@@ -1,8 +1,12 @@
 $('.carousel').carousel();
+$('#header').affix({
+  offset: 15
+  });
 jQuery(function() {
 	initBackgroundResize();
 	initRetinaCover();
 	initCustomForms();
+	initSameHeight();
 });
 // stretch background to fill blocks
 function initBackgroundResize() {
@@ -23,6 +27,23 @@ function initCustomForms() {
 		wrapNativeOnMobile: false
 	});
 	jcf.replaceAll();
+}
+function initSameHeight() {
+	jQuery('.service-content').sameHeight({
+		elements: '.service-item',
+		flexible: true,
+		multiLine: true
+	});
+	jQuery('.other-services').sameHeight({
+		elements: '.other-service',
+		flexible: true,
+		multiLine: true
+	});
+	jQuery('ul.intro-list').sameHeight({
+		elements: '.intro',
+		flexible: true,
+		multiLine: true
+	});
 }
 /*
  * Image Stretch module
@@ -1602,3 +1623,310 @@ var ImageStretcher = {
 	}());
 
 }(jQuery, this));
+/*
+ * jQuery SameHeight plugin
+ */
+;(function($){
+	$.fn.sameHeight = function(opt) {
+		var options = $.extend({
+			skipClass: 'same-height-ignore',
+			leftEdgeClass: 'same-height-left',
+			rightEdgeClass: 'same-height-right',
+			elements: '>*',
+			flexible: false,
+			multiLine: false,
+			useMinHeight: false,
+			biggestHeight: false
+		},opt);
+		return this.each(function(){
+			var holder = $(this), postResizeTimer, ignoreResize;
+			var elements = holder.find(options.elements).not('.' + options.skipClass);
+			if(!elements.length) return;
+
+			// resize handler
+			function doResize() {
+				elements.css(options.useMinHeight && supportMinHeight ? 'minHeight' : 'height', '');
+				if(options.multiLine) {
+					// resize elements row by row
+					resizeElementsByRows(elements, options);
+				} else {
+					// resize elements by holder
+					resizeElements(elements, holder, options);
+				}
+			}
+			doResize();
+
+			// handle flexible layout / font resize
+			var delayedResizeHandler = function() {
+				if(!ignoreResize) {
+					ignoreResize = true;
+					doResize();
+					clearTimeout(postResizeTimer);
+					postResizeTimer = setTimeout(function() {
+						doResize();
+						setTimeout(function(){
+							ignoreResize = false;
+						}, 10);
+					}, 100);
+				}
+			};
+
+			// handle flexible/responsive layout
+			if(options.flexible) {
+				$(window).bind('resize orientationchange fontresize', delayedResizeHandler);
+			}
+
+			// handle complete page load including images and fonts
+			$(window).bind('load', delayedResizeHandler);
+		});
+	};
+
+	// detect css min-height support
+	var supportMinHeight = typeof document.documentElement.style.maxHeight !== 'undefined';
+
+	// get elements by rows
+	function resizeElementsByRows(boxes, options) {
+		var currentRow = $(), maxHeight, maxCalcHeight = 0, firstOffset = boxes.eq(0).offset().top;
+		boxes.each(function(ind){
+			var curItem = $(this);
+			if(curItem.offset().top === firstOffset) {
+				currentRow = currentRow.add(this);
+			} else {
+				maxHeight = getMaxHeight(currentRow);
+				maxCalcHeight = Math.max(maxCalcHeight, resizeElements(currentRow, maxHeight, options));
+				currentRow = curItem;
+				firstOffset = curItem.offset().top;
+			}
+		});
+		if(currentRow.length) {
+			maxHeight = getMaxHeight(currentRow);
+			maxCalcHeight = Math.max(maxCalcHeight, resizeElements(currentRow, maxHeight, options));
+		}
+		if(options.biggestHeight) {
+			boxes.css(options.useMinHeight && supportMinHeight ? 'minHeight' : 'height', maxCalcHeight);
+		}
+	}
+
+	// calculate max element height
+	function getMaxHeight(boxes) {
+		var maxHeight = 0;
+		boxes.each(function(){
+			maxHeight = Math.max(maxHeight, $(this).outerHeight());
+		});
+		return maxHeight;
+	}
+
+	// resize helper function
+	function resizeElements(boxes, parent, options) {
+		var calcHeight;
+		var parentHeight = typeof parent === 'number' ? parent : parent.height();
+		boxes.removeClass(options.leftEdgeClass).removeClass(options.rightEdgeClass).each(function(i){
+			var element = $(this);
+			var depthDiffHeight = 0;
+			var isBorderBox = element.css('boxSizing') === 'border-box' || element.css('-moz-box-sizing') === 'border-box' || '-webkit-box-sizing' === 'border-box';
+
+			if(typeof parent !== 'number') {
+				element.parents().each(function(){
+					var tmpParent = $(this);
+					if(parent.is(this)) {
+						return false;
+					} else {
+						depthDiffHeight += tmpParent.outerHeight() - tmpParent.height();
+					}
+				});
+			}
+			calcHeight = parentHeight - depthDiffHeight;
+			calcHeight -= isBorderBox ? 0 : element.outerHeight() - element.height();
+
+			if(calcHeight > 0) {
+				element.css(options.useMinHeight && supportMinHeight ? 'minHeight' : 'height', calcHeight);
+			}
+		});
+		boxes.filter(':first').addClass(options.leftEdgeClass);
+		boxes.filter(':last').addClass(options.rightEdgeClass);
+		return calcHeight;
+	}
+}(jQuery));
+
+/*
+ * jQuery FontResize Event
+ */
+jQuery.onFontResize = (function($) {
+	$(function() {
+		var randomID = 'font-resize-frame-' + Math.floor(Math.random() * 1000);
+		var resizeFrame = $('<iframe>').attr('id', randomID).addClass('font-resize-helper');
+
+		// required styles
+		resizeFrame.css({
+			width: '100em',
+			height: '10px',
+			position: 'absolute',
+			borderWidth: 0,
+			top: '-9999px',
+			left: '-9999px'
+		}).appendTo('body');
+
+		// use native IE resize event if possible
+		if (window.attachEvent && !window.addEventListener) {
+			resizeFrame.bind('resize', function () {
+				$.onFontResize.trigger(resizeFrame[0].offsetWidth / 100);
+			});
+		}
+		// use script inside the iframe to detect resize for other browsers
+		else {
+			var doc = resizeFrame[0].contentWindow.document;
+			doc.open();
+			doc.write('<scri' + 'pt>window.onload = function(){var em = parent.jQuery("#' + randomID + '")[0];window.onresize = function(){if(parent.jQuery.onFontResize){parent.jQuery.onFontResize.trigger(em.offsetWidth / 100);}}};</scri' + 'pt>');
+			doc.close();
+		}
+		jQuery.onFontResize.initialSize = resizeFrame[0].offsetWidth / 100;
+	});
+	return {
+		// public method, so it can be called from within the iframe
+		trigger: function (em) {
+			$(window).trigger("fontresize", [em]);
+		}
+	};
+}(jQuery));
+/*
+ *bG Parallax
+ */
+ ;(function($){
+	'use strict';
+
+	var isTouchDevice = /MSIE 10.*Touch/.test(navigator.userAgent) || ('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch;
+
+	var ParallaxController = (function() {
+		var $win = $(window);
+		var items = [];
+		var winProps = {
+			width: 0,
+			height: 0,
+			scrollTop: 0
+		};
+
+		return {
+			init: function() {
+				$win.on('load resize orientationchange', this.resizeHandler.bind(this));
+				$win.on('scroll', this.scrollHandler.bind(this));
+
+				this.resizeHandler();
+			},
+
+			resizeHandler: function() {
+				winProps.width = $win.width();
+				winProps.height = $win.height();
+
+				$.each(items, this.calculateSize.bind(this));
+			},
+
+			scrollHandler: function() {
+				winProps.scrollTop = $win.scrollTop();
+
+				$.each(items, this.calculateScroll.bind(this));
+			},
+
+			calculateSize: function(i) {
+				var item = items[i];
+				var bgWidth;
+				var bgHeight;
+
+				item.height = item.$el.outerHeight();
+				item.width = item.$el.outerWidth();
+				item.topOffset = item.$el.offset().top;
+				item.bgHeight = winProps.height + item.options.parallaxOffset;
+				item.itemRatio = winProps.width / (winProps.height + item.options.parallaxOffset);
+
+				if (item.imageRatio <= item.itemRatio) {
+					bgWidth = winProps.width;
+					bgHeight = bgWidth / item.imageRatio;
+
+					bgWidth += 'px ';
+					bgHeight += 'px ';
+				} else {
+					bgWidth = 'auto ';
+					bgHeight = winProps.height + item.options.parallaxOffset;
+
+					bgHeight += 'px ';
+				}
+
+				item.$el.css({
+					backgroundSize: bgWidth + bgHeight
+				});
+
+				this.calculateScroll(i);
+			},
+
+			calculateScroll: function(i) {
+				var item = items[i];
+				var curPos;
+				var offsetPercentage = Math.max(0, Math.min((winProps.scrollTop + winProps.height - item.topOffset)/(winProps.height + item.height), 1)).toFixed(4);
+
+				if(item.imageRatio <= item.itemRatio) {
+					curPos = '50% ' + ((-parseFloat(offsetPercentage) * item.options.parallaxOffset) - (item.bgHeight - winProps.height) / 2) + 'px';
+				} else {
+					curPos = '50% ' + (-parseFloat(offsetPercentage) * item.options.parallaxOffset) + 'px';
+				}
+
+				item.$el.css({backgroundPosition: curPos});
+			},
+
+			add: function(el, options) {
+				var $el = $(el);
+				var $image = $el.find(options.image);
+				var imageRatio = $image.attr('width') / $image.attr('height') || $image.width() / $image.height();
+
+				$el.css({
+					backgroundImage: 'url(' + $image.attr('src') + ')'
+				});
+
+				if (isTouchDevice) {
+					$el.addClass(options.fallbackClass);
+					return;
+				}
+
+				$image.remove();
+
+				options.parallaxOffset = Math.abs(options.parallaxOffset);
+
+				var newIndex = items.push({
+					$el: $(el),
+					options: options,
+					imageRatio: imageRatio
+				});
+
+				this.calculateSize(newIndex - 1);
+			}
+		};
+	}());
+
+	ParallaxController.init();
+
+	$.fn.parallaxBlock = function(options){
+		options = $.extend({
+			parallaxOffset: 100,
+			fallbackClass: 'fallback-class',
+			image: 'img'
+		}, options);
+		
+		return this.each(function() {
+			if (this.added) {
+				return;
+			}
+
+			this.added = true;
+			ParallaxController.add(this, options);
+		});
+	};
+}(jQuery));
+
+
+
+
+
+
+
+
+
+
+

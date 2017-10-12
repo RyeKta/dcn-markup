@@ -45,9 +45,11 @@
 	}
 	.entry-title{
 		@include media('<=tablet'){
+			@include line-clamp(31px, 2);
 			font-size: 1.5625em;
 			line-height: 1.24;
 		}
+		@include line-clamp(50px,2);
 		text-transform: capitalize;
 		margin: 0 0 0.806em;
 		line-height: 1.612;
@@ -96,6 +98,9 @@
 		}
 	}
 	.entry-excerpt{
+		p{
+			@include line-clamp(25px, 5);
+		}
 		.more{
 			-webkit-transition: all .3s ease-in-out;
 			transition: all .3s ease-in-out;
@@ -124,6 +129,7 @@
 		color: $white;
 		.entry-title{
 			@include font(0.8125em,1.538,700);
+			@include line-clamp(20px, 1);
 			text-transform: capitalize;
 			margin: 0 0 1.0625em;
 			a{
